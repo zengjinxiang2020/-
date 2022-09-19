@@ -390,7 +390,7 @@ public class StoreOrderController {
                                                   String orderType){
 
         //默认查询所有快递订单
-        criteria.setShippingType(OrderInfoEnum.SHIPPIING_TYPE_1.getValue());
+//        criteria.setShippingType(OrderInfoEnum.SHIPPIING_TYPE_1.getValue());
         //订单状态查询
         if (StrUtil.isNotEmpty(orderStatus)) {
             switch (orderStatus) {

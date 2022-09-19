@@ -54,7 +54,8 @@ public enum OrderInfoEnum {
 
 
 	SHIPPIING_TYPE_1(1,"快递"),
-	SHIPPIING_TYPE_2(2,"门店自提");
+	SHIPPIING_TYPE_2(2,"门店自提"),
+	SHIPPIING_TYPE_3(3,"同城配送");
 
 
 

@@ -309,8 +309,8 @@ public class YxStoreOrderServiceImpl extends BaseServiceImpl<StoreOrderMapper, Y
         BigDecimal payPostage = priceGroup.getStorePostage();
 
         Integer shippingTypeI = Integer.valueOf(shippingType);
-        //1-配送 2-到店
-        if (OrderInfoEnum.SHIPPIING_TYPE_1.getValue().equals(shippingTypeI)) {
+        //1-配送 2-到店 3-同城
+        if (OrderInfoEnum.SHIPPIING_TYPE_1.getValue().equals(shippingTypeI)||OrderInfoEnum.SHIPPIING_TYPE_3.getValue().equals(shippingTypeI)) {
             payPrice = NumberUtil.add(payPrice, payPostage);
         } else {
             payPostage = BigDecimal.ZERO;
@@ -409,7 +409,7 @@ public class YxStoreOrderServiceImpl extends BaseServiceImpl<StoreOrderMapper, Y
 
         //处理选择门店与正常选择地址下单
         YxUserAddress userAddress = null;
-        if (OrderInfoEnum.SHIPPIING_TYPE_1.getValue().equals(Integer.valueOf(param.getShippingType()))) {
+        if (OrderInfoEnum.SHIPPIING_TYPE_1.getValue().equals(Integer.valueOf(param.getShippingType()))||OrderInfoEnum.SHIPPIING_TYPE_3.getValue().equals(Integer.valueOf(param.getShippingType()))) {
             if (StrUtil.isEmpty(param.getAddressId())) {
                 throw new YshopException("请选择收货地址");
             }
@@ -1179,8 +1179,6 @@ public class YxStoreOrderServiceImpl extends BaseServiceImpl<StoreOrderMapper, Y
     /**
      * chart图标统计
      *
-     * @param cate
-     * @param type
      * @return
      */
     // @Override
@@ -1450,7 +1448,7 @@ public class YxStoreOrderServiceImpl extends BaseServiceImpl<StoreOrderMapper, Y
                     statusDTO.set_title("未发货");
                 }
             } else {
-                if (OrderInfoEnum.SHIPPIING_TYPE_1.getValue().equals(order.getShippingType())) {
+                if (OrderInfoEnum.SHIPPIING_TYPE_1.getValue().equals(order.getShippingType())||OrderInfoEnum.SHIPPIING_TYPE_3.getValue().equals(order.getShippingType())) {
                     statusDTO.set_class("state-nfh");
                     statusDTO.set_msg("商家未发货,请耐心等待");
                     statusDTO.set_type("1");
