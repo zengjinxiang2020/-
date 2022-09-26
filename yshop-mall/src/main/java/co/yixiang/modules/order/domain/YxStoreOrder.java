@@ -31,11 +31,11 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)
-@TableName("yx_store_order")
+@TableName("yx_store_order")    //设置实体类所对应的表名
 public class YxStoreOrder extends BaseDomain {
 
     /** 订单ID */
-    @TableId
+    @TableId    //将属性所对应的字段指定为主键
     private Long id;
 
 

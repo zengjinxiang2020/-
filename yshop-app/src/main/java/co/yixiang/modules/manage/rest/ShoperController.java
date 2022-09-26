@@ -12,6 +12,7 @@ import cn.hutool.core.util.ObjectUtil;
 import cn.hutool.core.util.StrUtil;
 import co.yixiang.api.ApiResult;
 import co.yixiang.api.YshopException;
+import co.yixiang.common.bean.LocalUser;
 import co.yixiang.logging.aop.log.AppLog;
 import co.yixiang.common.interceptor.AuthCheck;
 import co.yixiang.modules.manage.param.OrderPriceParam;
@@ -40,6 +41,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.math.BigDecimal;
+import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -98,9 +100,14 @@ public class ShoperController {
     @GetMapping("/admin/order/list")
     @ApiOperation(value = "订单列表",notes = "订单列表")
     public ApiResult<Object> orderList(ShoperQueryParam queryParam) {
+        String pickerName = LocalUser.getUser().getRealName();
         Map<String, Object> map = storeOrderService.orderList(null, queryParam.getStatus(),
                 queryParam.getPage(), queryParam.getLimit());
-        return ApiResult.ok(map.get("list"));
+        Map<String, Object> pickerMap = new HashMap<String, Object>();
+        pickerMap.put("list",map.get("list"));
+        pickerMap.put("pickerName",pickerName);
+//        return ApiResult.ok(map.get("list"));
+        return ApiResult.ok(pickerMap);
     }
 
     /**
