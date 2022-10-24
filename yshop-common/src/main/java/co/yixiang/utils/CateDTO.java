@@ -18,7 +18,7 @@ import java.util.List;
  * 商城商品分类
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @since 2019-09-08
  */
 @Data

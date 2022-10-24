@@ -63,7 +63,7 @@ import java.util.Map;
  * 砍价 前端控制器
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @since 2019-12-21
  */
 

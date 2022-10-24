@@ -29,7 +29,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * @author /
  */
-@Component
+@Component("redisUtils")
 @SuppressWarnings({"unchecked","all"})
 public class RedisUtils {
 

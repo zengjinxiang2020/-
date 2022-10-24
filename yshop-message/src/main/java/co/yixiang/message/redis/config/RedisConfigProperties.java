@@ -16,7 +16,7 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * reids相关配置
- * @author hupeng
+ * @author Shuo Xing
  * @since 2020-02-27
  */
 @Data

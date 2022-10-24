@@ -7,7 +7,7 @@ package co.yixiang.constant;
 
 /**
  * 商城统一常量
- * @author hupeng
+ * @author Shuo Xing
  * @since 2020-02-27
  */
 public interface ShopConstants {

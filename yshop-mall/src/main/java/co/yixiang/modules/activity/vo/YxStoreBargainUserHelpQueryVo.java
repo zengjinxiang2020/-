@@ -12,7 +12,7 @@ import java.math.BigDecimal;
  * 砍价用户帮助表 查询结果对象
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @date 2019-12-21
  */
 @Data

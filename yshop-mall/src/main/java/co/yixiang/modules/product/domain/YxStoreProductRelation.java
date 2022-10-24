@@ -16,7 +16,7 @@ import lombok.Setter;
  * 商品点赞和收藏表
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @since 2019-10-23
  */
 

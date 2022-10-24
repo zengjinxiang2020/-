@@ -56,7 +56,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 /**
- * @author hupeng
+ * @author Shuo Xing
  * @date 2018-11-23
  */
 @Api(tags = "系统：用户管理")

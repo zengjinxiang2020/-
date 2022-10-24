@@ -24,7 +24,7 @@ import java.util.List;
  * 用户参与砍价表 Mapper 接口
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @since 2019-12-21
  */
 @Repository

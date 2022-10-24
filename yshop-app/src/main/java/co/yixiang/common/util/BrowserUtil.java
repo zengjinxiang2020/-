@@ -5,7 +5,7 @@ import javax.servlet.http.HttpServletRequest;
 
 /**
  * 浏览器工具类
- * @author hupeng
+ * @author Shuo Xing
  * @date 2020-04-30
  */
 public final class BrowserUtil {

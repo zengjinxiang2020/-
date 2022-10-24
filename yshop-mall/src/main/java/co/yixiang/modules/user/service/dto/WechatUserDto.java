@@ -8,7 +8,7 @@ import lombok.Setter;
 
 /**
  * @ClassName WechatUserDTO
- * @Author hupeng <610796224@qq.com>
+ * @Author Shuo Xing <610796224@qq.com>
  * @Date 2020/6/4
  **/
 @Getter

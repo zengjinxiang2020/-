@@ -14,7 +14,7 @@ package co.yixiang.api;
 
 /**
  * 业务异常
- * @author hupeng
+ * @author Shuo Xing
  * @date 2020-04-30
  */
 public class BusinessException extends YshopException {

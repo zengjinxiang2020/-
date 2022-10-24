@@ -11,7 +11,7 @@ public class IpUtil {
     private IpUtil(){}
     /**
      * 此方法描述的是：获得服务器的IP地址
-     * @author: zhangyang33@sinopharm.com
+     * @author: Shuo Xing
      * @version: 2014年9月5日 下午4:57:15
      */
     public static String getLocalIP() {
@@ -47,7 +47,7 @@ public class IpUtil {
     }
     /**
      * 此方法描述的是：获得服务器的IP地址(多网卡)
-     * @author: zhangyang33@sinopharm.com
+     * @author: Shuo Xing
      * @version: 2014年9月5日 下午4:57:15
      */
     public static List<String> getLocalIPS() {
@@ -75,7 +75,7 @@ public class IpUtil {
     }
     /**
      * 此方法描述的是：获得服务器的MAC地址
-     * @author: zhangyang33@sinopharm.com
+     * @author: Shuo Xing
      * @version: 2014年9月5日 下午1:27:25
      */
     public static String getMacId() {
@@ -117,7 +117,7 @@ public class IpUtil {
     }
     /**
      * 此方法描述的是：获得服务器的MAC地址(多网卡)
-     * @author: zhangyang33@sinopharm.com
+     * @author: Shuo Xing
      * @version: 2014年9月5日 下午1:27:25
      */
     public static List<String> getMacIds() {

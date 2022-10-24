@@ -6,7 +6,7 @@ import lombok.Getter;
 import java.util.stream.Stream;
 
 /**
- * @author hupeng
+ * @author Shuo Xing
  * 订单操作相关枚举
  */
 @Getter
@@ -27,7 +27,8 @@ public enum OrderLogEnum {
 	CREATE_ORDER("yshop_create_order","订单生成"),
 	NONE_ORDER("NONE","订单OK"),
 	DELIVERY_GOODS("delivery_goods", "订单发货"),
-	EXTEND_ORDER("EXTEND_ORDER","订单已生成");
+	EXTEND_ORDER("EXTEND_ORDER","订单已生成"),
+	TAKE_GOODS("TAKE_GOODS","拿货员操作订单");
 
 
 	private String value;

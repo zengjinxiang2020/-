@@ -35,7 +35,7 @@ import java.util.List;
  * 砍价用户帮助表 服务实现类
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @since 2019-12-21
  */
 @Slf4j

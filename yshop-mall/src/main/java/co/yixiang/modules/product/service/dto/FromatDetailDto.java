@@ -15,7 +15,7 @@ import java.util.List;
 
 /**
  * @ClassName FromatDetailDTO
- * @Author hupeng <610796224@qq.com>
+ * @Author Shuo Xing <610796224@qq.com>
  * @Date 2019/10/12
  **/
 

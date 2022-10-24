@@ -10,7 +10,7 @@ import javax.validation.constraints.NotNull;
 
 /**
  * @ClassName 购物车数量CartNumParam
- * @Author hupeng <610796224@qq.com>
+ * @Author Shuo Xing <610796224@qq.com>
  * @Date 2020/6/19
  **/
 @Getter

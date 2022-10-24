@@ -13,7 +13,7 @@ import co.yixiang.modules.product.domain.YxStoreProductAttrResult;
 import org.springframework.stereotype.Repository;
 
 /**
-* @author hupeng
+* @author Shuo Xing
 * @date 2020-05-12
 */
 @Repository

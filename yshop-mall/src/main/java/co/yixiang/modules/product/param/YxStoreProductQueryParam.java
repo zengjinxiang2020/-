@@ -11,7 +11,7 @@ import lombok.EqualsAndHashCode;
  * 商品表 查询参数对象
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @date 2019-10-19
  */
 @Data

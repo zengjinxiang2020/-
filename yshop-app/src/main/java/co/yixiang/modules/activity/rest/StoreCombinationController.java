@@ -54,7 +54,7 @@ import java.util.Map;
  * 拼团前端控制器
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @since 2019-11-19
  */
 @Slf4j

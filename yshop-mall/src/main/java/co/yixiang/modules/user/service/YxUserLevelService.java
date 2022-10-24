@@ -17,7 +17,7 @@ import co.yixiang.modules.user.domain.YxUserLevel;
  * 用户等级记录表 服务类
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @since 2019-12-06
  */
 public interface YxUserLevelService extends BaseService<YxUserLevel> {

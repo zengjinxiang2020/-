@@ -12,7 +12,7 @@ import javax.validation.constraints.NotBlank;
  * 商品点赞和收藏表 查询参数对象
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @date 2019-10-23
  */
 @Getter

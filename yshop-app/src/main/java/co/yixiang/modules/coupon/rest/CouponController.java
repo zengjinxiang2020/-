@@ -44,7 +44,7 @@ import java.util.Map;
  * 优惠券 todo
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @since 2019-10-02
  */
 @Slf4j

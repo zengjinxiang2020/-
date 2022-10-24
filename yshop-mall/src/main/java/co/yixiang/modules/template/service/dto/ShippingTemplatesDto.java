@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * 运费模板对象 yx_shipping_templates
  * 
- * @author hupeng
+ * @author Shuo Xing
  * @date 2020-05-23
  */
 @Getter

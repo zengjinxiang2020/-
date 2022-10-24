@@ -25,7 +25,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
-* @author hupeng
+* @author Shuo Xing
 * @date 2020-05-13
 */
 public interface YxStoreBargainService  extends BaseService<YxStoreBargain>{

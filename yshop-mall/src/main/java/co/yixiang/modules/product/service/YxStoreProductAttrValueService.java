@@ -13,7 +13,7 @@ import co.yixiang.modules.product.domain.YxStoreProductAttrValue;
 
 
 /**
-* @author hupeng
+* @author Shuo Xing
 * @date 2020-05-12
 */
 public interface YxStoreProductAttrValueService  extends BaseService<YxStoreProductAttrValue>{

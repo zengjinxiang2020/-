@@ -1,7 +1,7 @@
 //package co.yixiang.config;
 //
 ///**
-// * @author ：LionCity
+// * @author ：Shuo Xing
 // * @date ：Created in 2020-12-21 13:38
 // * @description：
 // * @modified By：

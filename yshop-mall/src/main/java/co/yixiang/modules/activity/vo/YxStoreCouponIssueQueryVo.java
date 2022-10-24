@@ -13,7 +13,7 @@ import java.util.Date;
  * 优惠券前台领取表 查询结果对象
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @date 2019-10-27
  */
 @Data

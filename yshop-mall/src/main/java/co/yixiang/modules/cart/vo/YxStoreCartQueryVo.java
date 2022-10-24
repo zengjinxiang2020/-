@@ -14,7 +14,7 @@ import java.io.Serializable;
  * 购物车表 查询结果对象
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @date 2019-10-25
  */
 @Data

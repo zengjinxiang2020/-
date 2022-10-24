@@ -16,7 +16,7 @@ import java.lang.annotation.Target;
 
 /**
  * @ClassName 自定义权限注解
- * @Author hupeng <610796224@qq.com>
+ * @Author Shuo Xing <610796224@qq.com>
  * @Date 2020/4/30
  **/
 @Target({ElementType.METHOD, ElementType.TYPE})

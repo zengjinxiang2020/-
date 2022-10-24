@@ -25,7 +25,7 @@ import java.util.List;
  * 商品点赞和收藏表 服务类
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @since 2019-10-23
  */
 public interface YxStoreProductRelationService extends BaseService<YxStoreProductRelation> {

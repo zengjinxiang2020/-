@@ -12,7 +12,7 @@ import java.util.Map;
 
 /**
  * @ClassName DetailDTO
- * @Author hupeng <610796224@qq.com>
+ * @Author Shuo Xing <610796224@qq.com>
  * @Date 2019/10/12
  **/
 @Data

@@ -32,7 +32,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
-* @author hupeng
+* @author Shuo Xing
 * @date 2019-12-10
 */
 @Api(tags = "商城:微信模板管理")

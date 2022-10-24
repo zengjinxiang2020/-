@@ -5,7 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 /**
- * @author hupeng
+ * @author Shuo Xing
  * 分销级别
  */
 @Getter

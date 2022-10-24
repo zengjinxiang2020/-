@@ -107,7 +107,7 @@ import java.util.stream.Collectors;
 
 
 /**
- * @author hupeng
+ * @author Shuo Xing
  * @date 2020-05-12
  */
 @Slf4j
@@ -187,6 +187,9 @@ public class YxStoreOrderServiceImpl extends BaseServiceImpl<StoreOrderMapper, Y
 
     @Autowired
     private StoreAfterSalesService storeAfterSalesService;
+
+//    @Autowired
+//    private BaiduService baiduService;
 
 
     /**
@@ -310,7 +313,7 @@ public class YxStoreOrderServiceImpl extends BaseServiceImpl<StoreOrderMapper, Y
 
         Integer shippingTypeI = Integer.valueOf(shippingType);
         //1-配送 2-到店 3-同城
-        if (OrderInfoEnum.SHIPPIING_TYPE_1.getValue().equals(shippingTypeI)||OrderInfoEnum.SHIPPIING_TYPE_3.getValue().equals(shippingTypeI)) {
+        if (OrderInfoEnum.SHIPPIING_TYPE_1.getValue().equals(shippingTypeI) || OrderInfoEnum.SHIPPIING_TYPE_3.getValue().equals(shippingTypeI)) {
             payPrice = NumberUtil.add(payPrice, payPostage);
         } else {
             payPostage = BigDecimal.ZERO;
@@ -409,7 +412,7 @@ public class YxStoreOrderServiceImpl extends BaseServiceImpl<StoreOrderMapper, Y
 
         //处理选择门店与正常选择地址下单
         YxUserAddress userAddress = null;
-        if (OrderInfoEnum.SHIPPIING_TYPE_1.getValue().equals(Integer.valueOf(param.getShippingType()))||OrderInfoEnum.SHIPPIING_TYPE_3.getValue().equals(Integer.valueOf(param.getShippingType()))) {
+        if (OrderInfoEnum.SHIPPIING_TYPE_1.getValue().equals(Integer.valueOf(param.getShippingType())) || OrderInfoEnum.SHIPPIING_TYPE_3.getValue().equals(Integer.valueOf(param.getShippingType()))) {
             if (StrUtil.isEmpty(param.getAddressId())) {
                 throw new YshopException("请选择收货地址");
             }
@@ -541,7 +544,7 @@ public class YxStoreOrderServiceImpl extends BaseServiceImpl<StoreOrderMapper, Y
 
 
         //保存购物车商品信息
-        orderCartInfoService.saveCartInfo(storeOrder.getId(), storeOrder.getOrderId(),cartInfo);
+        orderCartInfoService.saveCartInfo(storeOrder.getId(), storeOrder.getOrderId(), cartInfo);
 
 
         //购物车状态修改
@@ -873,6 +876,36 @@ public class YxStoreOrderServiceImpl extends BaseServiceImpl<StoreOrderMapper, Y
 
         //增加状态
         orderStatusService.create(storeOrder.getId(), OrderLogEnum.ORDER_EDIT.getValue(), "修改实际支付金额");
+
+    }
+
+    /**
+     * 修改订单价格
+     *
+     * @param orderId 单号
+     * @param takeGoods   拿货状态 0待拿货 1备货中 2已备货
+     */
+    @Override
+    public void editOrderTakeGoods(String orderId,Integer takeGoods){
+        YxStoreOrderQueryVo orderQueryVo = getOrderInfo(orderId, null);
+        if (ObjectUtil.isNull(orderQueryVo)) {
+            throw new YshopException("订单不存在");
+        }
+
+
+        if (orderQueryVo.getTakeGoods().compareTo(takeGoods) == 0) {
+            return;
+        }
+
+
+        YxStoreOrder storeOrder = new YxStoreOrder();
+        storeOrder.setId(orderQueryVo.getId());
+        storeOrder.setTakeGoods(takeGoods);
+
+        yxStoreOrderMapper.updateById(storeOrder);
+
+        //增加状态
+        orderStatusService.create(storeOrder.getId(), OrderLogEnum.TAKE_GOODS.getValue(), "拿货员正在备货");
 
     }
 
@@ -1448,7 +1481,7 @@ public class YxStoreOrderServiceImpl extends BaseServiceImpl<StoreOrderMapper, Y
                     statusDTO.set_title("未发货");
                 }
             } else {
-                if (OrderInfoEnum.SHIPPIING_TYPE_1.getValue().equals(order.getShippingType())||OrderInfoEnum.SHIPPIING_TYPE_3.getValue().equals(order.getShippingType())) {
+                if (OrderInfoEnum.SHIPPIING_TYPE_1.getValue().equals(order.getShippingType()) || OrderInfoEnum.SHIPPIING_TYPE_3.getValue().equals(order.getShippingType())) {
                     statusDTO.set_class("state-nfh");
                     statusDTO.set_msg("商家未发货,请耐心等待");
                     statusDTO.set_type("1");
@@ -1948,6 +1981,7 @@ public class YxStoreOrderServiceImpl extends BaseServiceImpl<StoreOrderMapper, Y
 
 
         String storeFreePostageStr = systemConfigService.getData(SystemConfigConstants.STORE_FREE_POSTAGE);//满额包邮
+        System.out.println("storeFreePostageStr before: " + storeFreePostageStr);
         BigDecimal storeFreePostage = BigDecimal.ZERO;
         if (NumberUtil.isNumber(storeFreePostageStr) && StrUtil.isNotBlank(storeFreePostageStr)) {
             storeFreePostage = new BigDecimal(storeFreePostageStr);
@@ -1958,10 +1992,23 @@ public class YxStoreOrderServiceImpl extends BaseServiceImpl<StoreOrderMapper, Y
         BigDecimal costPrice = this.getOrderSumPrice(cartInfo, "costPrice");//获取订单成本价
         BigDecimal vipPrice = this.getOrderSumPrice(cartInfo, "vipTruePrice");//获取订单会员优惠金额
         BigDecimal payIntegral = this.getOrderSumPrice(cartInfo, "payIntegral");//获取订单需要的积分
-
+        System.out.println("storePostage before: " + storePostage);
+        boolean flag = storeFreePostage.compareTo(BigDecimal.ZERO) != 0 && totalPrice.compareTo(storeFreePostage) <= 0;
+        boolean flag1 = storeFreePostage.compareTo(BigDecimal.ZERO) != 0;
+        boolean flag2 = totalPrice.compareTo(storeFreePostage) <= 0;
+        System.out.println(flag);
+        System.out.println(flag1);
+        System.out.println(flag2);
+        System.out.println("totalPrice:" + totalPrice);
+        System.out.println("storeFreePostage:" + storeFreePostage);
         //如果设置满包邮0 表示全局包邮，如果设置大于0表示满这价格包邮，否则走运费模板算法
-        if (storeFreePostage.compareTo(BigDecimal.ZERO) != 0 && totalPrice.compareTo(storeFreePostage) <= 0) {
+//        if (storeFreePostage.compareTo(BigDecimal.ZERO) != 0 && totalPrice.compareTo(storeFreePostage) <= 0) {
+        if (storeFreePostage.compareTo(BigDecimal.ZERO) != 0 && totalPrice.compareTo(storeFreePostage) > 0) {
+            System.out.println("storeFreePostageStr after: " + storeFreePostageStr);
+
             storePostage = this.handlePostage(cartInfo, userAddress);
+            System.out.println("storePostage after: " + storePostage);
+
         }
         if (cartInfo.size() == 1 && cartInfo.get(0).getProductInfo().getIsIntegral() != null
                 && cartInfo.get(0).getProductInfo().getIsIntegral() == 1) {
@@ -2077,7 +2124,8 @@ public class YxStoreOrderServiceImpl extends BaseServiceImpl<StoreOrderMapper, Y
             }
 
             //处理包邮情况
-            jj: for (Map.Entry<Integer, TemplateDto> entry : templateDTOMap.entrySet()) {
+            jj:
+            for (Map.Entry<Integer, TemplateDto> entry : templateDTOMap.entrySet()) {
                 Integer mapKey = entry.getKey();
                 TemplateDto mapValue = entry.getValue();
 
@@ -2109,7 +2157,7 @@ public class YxStoreOrderServiceImpl extends BaseServiceImpl<StoreOrderMapper, Y
                         } else {
                             //续件平均值且向上取整数
                             double average = Math.ceil(NumberUtil.div(NumberUtil.sub(templateDTO.getNumber(),
-                                    templateDTO.getFirst()),
+                                            templateDTO.getFirst()),
                                     templateDTO.get_continue().doubleValue()));
                             //最终邮费
                             storePostage = NumberUtil.add(firstPrice, NumberUtil.mul(average,

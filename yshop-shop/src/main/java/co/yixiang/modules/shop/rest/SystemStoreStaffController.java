@@ -39,7 +39,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
-* @author hupeng
+* @author Shuo Xing
 * @date 2020-03-22
 */
 @Api(tags = "门店店员管理")

@@ -31,7 +31,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author hupeng
+ * @author Shuo Xing
  * @date 2020-01-09
  */
 @Api(tags = "上传统一管理")

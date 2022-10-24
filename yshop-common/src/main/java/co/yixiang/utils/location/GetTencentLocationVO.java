@@ -7,7 +7,7 @@ import lombok.Data;
 import java.io.Serializable;
 
 /**
- * @author ：LionCity
+ * @author ：Shuo Xing
  * @date ：Created in 2020-09-10 11:39
  * @description：
  * @modified By：

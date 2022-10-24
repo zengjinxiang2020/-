@@ -12,7 +12,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 /**
- * @author hupeng
+ * @author Shuo Xing
  * 微信公众号模板枚举
  */
 @Getter

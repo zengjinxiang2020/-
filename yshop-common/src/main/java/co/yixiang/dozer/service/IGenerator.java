@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Set;
 
 /**
- * @author ：LionCity
+ * @author ：Shuo Xing
  * @date ：Created in 2019/10/9 10:42
  * @description：doczer转换接口
  * @modified By：
@@ -28,7 +28,7 @@ public interface IGenerator {
      * @param clz 复制目标类型
      * @return {@link T}
      * @Description: 单个对象的深度复制及类型转换，vo/domain , po
-     * @author banjuer@outlook.com
+     * @author Shuo Xing
      * @Time 2018年5月9日 下午3:53:24
      */
     <T, S> T convert(S s, Class<T> clz);
@@ -38,7 +38,7 @@ public interface IGenerator {
      * @param s 数据对象
      * @param clz 复制目标类型
      * @return
-     * @author banjuer@outlook.com
+     * @author Shuo Xing
      * @Time 2018年5月9日 下午3:53:24
      */
     //<T, S> Result<T> convert(Result<S> s, Class<T> clz);
@@ -49,7 +49,7 @@ public interface IGenerator {
      * @param clz 复制目标类型
      * @return {@link List<T>}
      * @Description: list深度复制
-     * @author banjuer@outlook.com
+     * @author Shuo Xing
      * @Time 2018年5月9日 下午3:54:08
      */
     <T, S> List<T> convert(List<S> s, Class<T> clz);
@@ -68,7 +68,7 @@ public interface IGenerator {
      * @param clz 复制目标类型
      * @return
      * @Description: set深度复制
-     * @author banjuer@outlook.com
+     * @author Shuo Xing
      * @Time 2018年5月9日 下午3:54:39
      */
     <T, S> Set<T> convert(Set<S> s, Class<T> clz);
@@ -78,7 +78,7 @@ public interface IGenerator {
      * @param clz 复制目标类型
      * @return
      * @Description: 数组深度复制
-     * @author banjuer@outlook.com
+     * @author Shuo Xing
      * @Time 2018年5月9日 下午3:54:57
      */
     <T, S> T[] convert(S[] s, Class<T> clz);

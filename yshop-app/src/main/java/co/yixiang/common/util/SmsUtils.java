@@ -23,7 +23,7 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * @ClassName 阿里云短信
- * @Author hupeng <610796224@qq.com>
+ * @Author Shuo Xing <610796224@qq.com>
  * @Date 2020/6/26
  **/
 @Slf4j

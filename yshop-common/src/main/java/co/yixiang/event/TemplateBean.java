@@ -8,7 +8,7 @@ import lombok.Setter;
 
 /**
  * @ClassName TemplateBean
- * @Author hupeng <610796224@qq.com>
+ * @Author Shuo Xing
  * @Date 2020/6/6
  **/
 @Getter

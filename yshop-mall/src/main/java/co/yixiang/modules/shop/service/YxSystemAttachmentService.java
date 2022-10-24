@@ -17,7 +17,7 @@ import co.yixiang.modules.shop.domain.YxSystemAttachment;
  * 附件管理表 服务类
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @since 2019-11-11
  */
 public interface YxSystemAttachmentService extends BaseService<YxSystemAttachment> {

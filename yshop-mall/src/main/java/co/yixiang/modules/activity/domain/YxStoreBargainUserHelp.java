@@ -19,7 +19,7 @@ import java.math.BigDecimal;
  * 砍价用户帮助表
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @since 2019-12-21
  */
 @Data

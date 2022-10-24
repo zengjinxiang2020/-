@@ -13,7 +13,7 @@ import java.util.List;
 
 /**
  * @ClassName TreeUtil
- * @Author hupeng <610796224@qq.com>
+ * @Author Shuo Xing
  * @Date 2019/10/22
  **/
 public class TreeUtil {

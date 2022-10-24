@@ -10,7 +10,7 @@ import lombok.EqualsAndHashCode;
  * 用户任务完成记录表 查询参数对象
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @date 2019-12-07
  */
 @Data

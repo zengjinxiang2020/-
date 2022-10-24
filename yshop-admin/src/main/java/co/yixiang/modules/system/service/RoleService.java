@@ -25,7 +25,7 @@ import java.util.Map;
 import java.util.Set;
 
 /**
-* @author hupeng
+* @author Shuo Xing
 * @date 2020-05-14
 */
 public interface RoleService  extends BaseService<Role>{

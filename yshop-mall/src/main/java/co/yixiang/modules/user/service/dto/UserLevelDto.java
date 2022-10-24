@@ -9,7 +9,7 @@ import java.util.List;
 
 /**
  * @ClassName UserLevelDto
- * @Author hupeng <610796224@qq.com>
+ * @Author Shuo Xing <610796224@qq.com>
  * @Date 2019/12/6
  **/
 @Data

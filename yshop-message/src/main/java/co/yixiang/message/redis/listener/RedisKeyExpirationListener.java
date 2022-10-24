@@ -28,7 +28,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * redis过期监听
- * @author hupeng
+ * @author Shuo Xing
  * @since 2020-02-27
  */
 @Component

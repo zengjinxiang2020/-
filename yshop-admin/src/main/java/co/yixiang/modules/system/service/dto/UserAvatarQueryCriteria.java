@@ -11,7 +11,7 @@ package co.yixiang.modules.system.service.dto;
 import lombok.Data;
 
 /**
-* @author hupeng
+* @author Shuo Xing
 * @date 2020-05-14
 */
 @Data

@@ -59,7 +59,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 /**
- * @author hupeng
+ * @author Shuo Xing
  * @date 2019-10-04
  */
 @Api(tags = "商城:商品管理")

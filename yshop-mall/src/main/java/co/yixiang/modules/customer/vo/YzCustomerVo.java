@@ -13,7 +13,7 @@ import java.util.Date;
  * 订单通知用户表 接收订单通知的用户 查询结果对象
  * </p>
  *
- * @author LionCity
+ * @author Shuo Xing
  * @date 2020-04-02
  */
 @Data

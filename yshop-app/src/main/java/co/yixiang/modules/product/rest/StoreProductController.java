@@ -65,7 +65,7 @@ import java.util.Map;
  * 商品控制器
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @since 2019-10-19
  */
 @Slf4j

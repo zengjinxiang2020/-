@@ -8,7 +8,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * @author ：LionCity
+ * @author ：Shuo Xing
  * @date ：Created in 2020-10-19 14:44
  * @description：正则表达式匹配两个字符串之间的内容
  * @modified By：

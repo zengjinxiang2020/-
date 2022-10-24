@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * Jwt参数配置
- * @author hupeng
+ * @author Shuo Xing
  * @date 2019年11月28日
  */
 @Data

@@ -19,7 +19,7 @@ import java.util.List;
  * 拼团产品表 查询结果对象
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @date 2019-11-19
  */
 @Data

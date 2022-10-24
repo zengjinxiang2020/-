@@ -23,7 +23,7 @@ import java.util.Optional;
 
 /**
  * 全局user
- * @author hupeng
+ * @author Shuo Xing
  * @date 2020-04-30
  */
 public class LocalUser {

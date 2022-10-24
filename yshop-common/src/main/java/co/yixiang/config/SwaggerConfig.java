@@ -46,7 +46,7 @@ import static springfox.documentation.schema.AlternateTypeRules.newRule;
 
 /**
  * api页面 /doc.html
- * @Author hupeng <610796224@qq.com>
+ * @Author Shuo Xing
  * @Date 2019/1/9
  **/
 
@@ -103,7 +103,7 @@ public class SwaggerConfig {
                 .termsOfServiceUrl(serverUrl)
                 .description(title)
                 .version(version)
-                .contact(new Contact("hupeng","https://www.yixiang.co","guchengwuyue@163.com"))
+                .contact(new Contact("Shuo Xing","https://www.yixiang.co","guchengwuyue@163.com"))
                 .build();
     }
 

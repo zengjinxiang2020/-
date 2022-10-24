@@ -7,7 +7,7 @@ import javax.validation.constraints.NotBlank;
 
 /**
  * @ClassName RegParam
- * @Author hupeng <610796224@qq.com>
+ * @Author Shuo Xing <610796224@qq.com>
  * @Date 2020/6/25
  **/
 @Data

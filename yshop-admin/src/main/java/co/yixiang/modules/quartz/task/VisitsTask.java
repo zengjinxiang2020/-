@@ -4,7 +4,7 @@ import co.yixiang.modules.monitor.service.VisitsService;
 import org.springframework.stereotype.Component;
 
 /**
- * @author Zheng Jie
+ * @author Shuo Xing
  * @date 2018-12-25
  */
 @Component

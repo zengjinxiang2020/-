@@ -16,7 +16,7 @@ import java.util.List;
 
 /**
  * @ClassName ConfirmOrderVo
- * @Author hupeng <610796224@qq.com>
+ * @Author Shuo Xing <610796224@qq.com>
  * @Date 2019/10/27
  **/
 @Data

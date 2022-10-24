@@ -43,7 +43,7 @@ import java.util.List;
 import java.util.UUID;
 
 /**
- * @author hupeng
+ * @author Shuo Xing
  * 异步监听模板通知事件
  */
 @Slf4j

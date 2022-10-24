@@ -23,7 +23,7 @@ import java.util.Date;
 /**
  * Token 工具类
  *
- * @author lioncity
+ * @author Shuo Xing
  */
 
 @Component

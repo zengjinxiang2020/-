@@ -18,7 +18,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * 重复提交aop
- * @author hupeng
+ * @author Shuo Xing
  * @since 2020-06-02
  */
 @Aspect

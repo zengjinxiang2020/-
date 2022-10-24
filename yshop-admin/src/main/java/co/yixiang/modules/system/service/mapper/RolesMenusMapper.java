@@ -13,7 +13,7 @@ import co.yixiang.modules.system.domain.RolesMenus;
 import org.springframework.stereotype.Repository;
 
 /**
-* @author hupeng
+* @author Shuo Xing
 * @date 2020-05-16
 */
 @Repository

@@ -10,7 +10,7 @@ import java.util.List;
 
 /**
  * @ClassName 树形工具类
- * @Author hupeng <610796224@qq.com>
+ * @Author Shuo Xing <610796224@qq.com>
  * @Date 2019/10/22
  **/
 public class CityTreeUtil {

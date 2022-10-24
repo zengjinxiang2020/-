@@ -24,7 +24,7 @@ import java.io.IOException;
 import java.util.List;
 
 /**
-* @author hupeng
+* @author Shuo Xing
 * @date 2020-08-10
 */
 public interface YxWechatLiveService  extends BaseService<YxWechatLive>{

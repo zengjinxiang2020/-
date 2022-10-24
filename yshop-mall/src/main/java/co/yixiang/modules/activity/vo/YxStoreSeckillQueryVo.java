@@ -20,7 +20,7 @@ import java.util.List;
  * 商品秒杀产品表 查询结果对象
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @date 2019-12-14
  */
 @Data

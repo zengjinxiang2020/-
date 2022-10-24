@@ -9,7 +9,7 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * @author ：LionCity
+ * @author ：Shuo Xing
  * @date ：Created in 2020-08-04 16:55
  * @description：分页参数返回
  * @modified By：

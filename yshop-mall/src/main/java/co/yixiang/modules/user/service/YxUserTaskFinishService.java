@@ -17,7 +17,7 @@ import co.yixiang.modules.user.domain.YxUserTaskFinish;
  * 用户任务完成记录表 服务类
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @since 2019-12-07
  */
 public interface YxUserTaskFinishService extends BaseService<YxUserTaskFinish> {

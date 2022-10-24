@@ -21,7 +21,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.Optional;
 
 /**
- * @author hupeng
+ * @author Shuo Xing
  * @date 2018-11-22
  */
 @Service("userDetailsService")

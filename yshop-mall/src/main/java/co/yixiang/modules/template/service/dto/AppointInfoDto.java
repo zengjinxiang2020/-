@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
  * @ClassName AppointInfoDto
- * @Author hupeng <610796224@qq.com>
+ * @Author Shuo Xing <610796224@qq.com>
  * @Date 2020/5/26
  **/
 @Getter

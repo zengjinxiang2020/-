@@ -10,7 +10,7 @@ import co.yixiang.modules.mp.domain.YxWechatReply;
 import org.springframework.stereotype.Repository;
 
 /**
-* @author hupeng
+* @author Shuo Xing
 * @date 2020-05-12
 */
 @Repository

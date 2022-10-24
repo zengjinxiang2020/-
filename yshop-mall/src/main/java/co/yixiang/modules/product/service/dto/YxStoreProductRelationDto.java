@@ -17,7 +17,7 @@ import java.sql.Timestamp;
 import java.io.Serializable;
 
 /**
- * @author hupeng
+ * @author Shuo Xing
  * @date 2020-09-03
  */
 @Data

@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
  * @ClassName RegionDto
- * @Author hupeng <610796224@qq.com>
+ * @Author Shuo Xing <610796224@qq.com>
  * @Date 2020/5/25
  **/
 @Getter

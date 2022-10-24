@@ -24,7 +24,7 @@ import org.springframework.transaction.annotation.Transactional;
  * 用户任务完成记录表 服务实现类
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @since 2019-12-07
  */
 @Slf4j

@@ -43,7 +43,7 @@ import java.math.BigDecimal;
 
 /**
  * @ClassName 微信支付WeixinPayService
- * @Author hupeng <610796224@qq.com>
+ * @Author Shuo Xing
  * @Date 2020/6/27
  **/
 @Service

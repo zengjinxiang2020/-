@@ -27,7 +27,7 @@ import java.util.List;
  * 商品分类前端控制器
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @since 2019-10-22
  */
 @Slf4j

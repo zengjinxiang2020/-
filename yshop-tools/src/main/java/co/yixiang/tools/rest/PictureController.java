@@ -31,7 +31,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * @author hupeng
+ * @author Shuo Xing
  * @date 2018/09/20 14:13:32
  */
 @RestController

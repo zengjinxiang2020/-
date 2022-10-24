@@ -8,7 +8,7 @@ import javax.validation.constraints.NotBlank;
 
 /**
  * @ClassName WxPhoneParam
- * @Author hupeng <610796224@qq.com>
+ * @Author Shuo Xing <610796224@qq.com>
  * @Date 2020/02/07
  **/
 @Getter

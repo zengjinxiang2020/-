@@ -11,7 +11,7 @@ import lombok.Data;
 import java.io.Serializable;
 
 /**
- * @author hupeng
+ * @author Shuo Xing
  * @date 2018-12-20
  */
 @Data

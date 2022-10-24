@@ -14,7 +14,7 @@ import java.util.Date;
 
 /**
  * @ClassName 公共模型
- * @Author hupeng <610796224@qq.com>
+ * @Author Shuo Xing
  * @Date 2020/6/13
  **/
 @Getter

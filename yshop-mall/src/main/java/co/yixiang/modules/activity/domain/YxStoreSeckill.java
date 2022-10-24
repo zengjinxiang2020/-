@@ -29,7 +29,7 @@ import java.util.Map;
 
 /**
  * 商品秒杀产品表
-* @author hupeng
+* @author Shuo Xing
 * @date 2020-05-13
 */
 @Data

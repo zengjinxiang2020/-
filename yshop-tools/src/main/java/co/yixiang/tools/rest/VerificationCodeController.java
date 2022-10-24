@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @author hupeng
+ * @author Shuo Xing
  * @date 2018-12-26
  */
 @RestController

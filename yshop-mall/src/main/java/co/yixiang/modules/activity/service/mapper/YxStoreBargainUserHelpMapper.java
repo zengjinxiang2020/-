@@ -18,7 +18,7 @@ import org.springframework.stereotype.Repository;
  * 砍价用户帮助表 Mapper 接口
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @since 2019-12-21
  */
 @Repository

@@ -9,7 +9,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 /**
- * @author hupeng
+ * @author Shuo Xing
  * 直播商品相关枚举
  */
 @Getter

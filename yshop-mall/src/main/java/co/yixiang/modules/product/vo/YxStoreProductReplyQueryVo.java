@@ -15,7 +15,7 @@ import java.util.Date;
  * 评论表 查询结果对象
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @date 2019-10-23
  */
 @Data

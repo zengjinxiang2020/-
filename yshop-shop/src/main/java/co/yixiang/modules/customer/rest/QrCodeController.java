@@ -30,7 +30,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.net.URLEncoder;
 
 /**
- * @author lioncity
+ * @author Shuo Xing
  * @date 2020-03-21
  */
 @Slf4j

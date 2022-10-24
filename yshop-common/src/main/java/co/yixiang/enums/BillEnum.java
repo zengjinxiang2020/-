@@ -11,7 +11,7 @@ import lombok.Getter;
 import java.util.stream.Stream;
 
 /**
- * @author hupeng
+ * @author Shuo Xing
  * 账单相关枚举
  */
 @Getter

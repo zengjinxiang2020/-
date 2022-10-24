@@ -4,7 +4,7 @@ import lombok.Getter;
 import org.springframework.context.ApplicationEvent;
 
 /**
- * @author hupeng
+ * @author Shuo Xing
  * 微信模板事件
  */
 @Getter

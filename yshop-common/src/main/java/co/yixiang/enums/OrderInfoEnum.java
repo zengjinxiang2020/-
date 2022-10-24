@@ -11,7 +11,7 @@ import lombok.Getter;
 import java.util.stream.Stream;
 
 /**
- * @author hupeng
+ * @author Shuo Xing
  * 订单相关枚举
  */
 @Getter
@@ -27,6 +27,10 @@ public enum OrderInfoEnum {
 
 	PAY_STATUS_0(0,"未支付"),
 	PAY_STATUS_1(1,"已支付"),
+
+	TAKE_GOODS_0(0,"待拿货"),
+	TAKE_GOODS_1(1,"备货中"),
+	TAKE_GOODS_2(2,"已备货"),
 
 	REFUND_STATUS_0(0,"正常"),
 	REFUND_STATUS_1(1,"退款中"),

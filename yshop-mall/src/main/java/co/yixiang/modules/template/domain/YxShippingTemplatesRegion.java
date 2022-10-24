@@ -23,7 +23,7 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 
 /**
-* @author hupeng
+* @author Shuo Xing
 * @date 2020-06-29
 */
 @AllArgsConstructor

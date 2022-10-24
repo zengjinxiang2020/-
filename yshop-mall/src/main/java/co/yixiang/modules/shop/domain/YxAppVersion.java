@@ -17,7 +17,7 @@ import java.util.Date;
 import co.yixiang.domain.BaseDomain;
 
 /**
-* @author lioncity
+* @author Shuo Xing
 * @date 2020-12-09
 */
 @Data

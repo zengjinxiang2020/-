@@ -41,7 +41,7 @@ import java.io.IOException;
 import java.util.List;
 
 /**
-* @author hupeng
+* @author Shuo Xing
 * @date 2019-10-03
 */
 @Api(tags = "商城:商品分类管理")

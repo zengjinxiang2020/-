@@ -2,7 +2,7 @@ package co.yixiang.enums;
 
 /**
  * 数据源
- * @author hupeng
+ * @author Shuo Xing
  */
 public enum DataSourceType
 {

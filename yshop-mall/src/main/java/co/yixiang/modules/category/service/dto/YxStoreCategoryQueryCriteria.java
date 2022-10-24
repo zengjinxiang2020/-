@@ -9,7 +9,7 @@ import co.yixiang.annotation.Query;
 import lombok.Data;
 
 /**
-* @author hupeng
+* @author Shuo Xing
 * @date 2020-05-12
 */
 @Data

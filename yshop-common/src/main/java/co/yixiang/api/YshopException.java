@@ -14,7 +14,7 @@ import lombok.EqualsAndHashCode;
 
 /**
  * 自定义异常
- * @author hupeng
+ * @author Shuo Xing
  * @date 2020-04-30
  */
 @Data

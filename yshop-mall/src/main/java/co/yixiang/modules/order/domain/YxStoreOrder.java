@@ -22,7 +22,7 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 /**
-* @author hupeng
+* @author Shuo Xing
 * @date 2020-05-12
 */
 
@@ -117,6 +117,10 @@ public class YxStoreOrder extends BaseDomain {
 
     /** 订单状态（-1 : 申请退款 -2 : 退货成功 0：待发货；1：待收货；2：已收货；3：待评价；-1：已退款） */
     private Integer status;
+
+
+    /**  拿货状态（0 ：待拿货 1 ：备货中 2 ：已备货） */
+    private Integer takeGoods;
 
 
     /** 0 未退款 1 申请中 2 已退款 */

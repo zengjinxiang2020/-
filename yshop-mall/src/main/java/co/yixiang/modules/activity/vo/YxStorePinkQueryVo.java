@@ -13,7 +13,7 @@ import java.util.Date;
  * 拼团表 查询结果对象
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @date 2019-11-19
  */
 @Data

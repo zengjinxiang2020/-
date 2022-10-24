@@ -5,7 +5,7 @@ import io.swagger.models.refs.GenericRef;
 import io.swagger.models.refs.RefType;
 
 /**
- * @author ：LionCity
+ * @author ：Shuo Xing
  * @date ：Created in 2019/9/24 17:17
  * @description： 同时拥有ArrayProperty和RefProperty的特性
  * @modified By：

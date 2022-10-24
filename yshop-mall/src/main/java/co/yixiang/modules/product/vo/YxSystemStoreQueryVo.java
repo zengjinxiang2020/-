@@ -11,7 +11,7 @@ import java.io.Serializable;
  * 门店自提 查询结果对象
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @date 2020-03-04
  */
 @Data

@@ -17,7 +17,7 @@ import java.io.IOException;
 import java.util.List;
 
 /**
- * @author hupeng
+ * @author Shuo Xing
  * @date 2018-11-24
  */
 public interface LogService extends BaseService<Log> {

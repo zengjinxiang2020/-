@@ -14,7 +14,7 @@ import lombok.Getter;
 import java.util.stream.Stream;
 
 /**
- * @author hupeng
+ * @author Shuo Xing
  * 短信类型枚举
  */
 @Getter

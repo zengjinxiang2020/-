@@ -27,7 +27,7 @@ import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 
 /**
-* @author hupeng
+* @author Shuo Xing
 * @date 2020-05-12
 */
 

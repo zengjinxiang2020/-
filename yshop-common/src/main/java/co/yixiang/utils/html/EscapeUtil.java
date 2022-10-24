@@ -5,7 +5,7 @@ import cn.hutool.core.util.StrUtil;
 
 /**
  * 转义和反转义工具类
- * @author hupeng
+ * @author Shuo Xing
  */
 public class EscapeUtil
 {

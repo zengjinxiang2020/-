@@ -16,7 +16,7 @@ import java.io.Serializable;
 
 /**
  * 请求详情信息
- * @author hupeng
+ * @author Shuo Xing
  * @date 2020-04-30
  */
 @Data

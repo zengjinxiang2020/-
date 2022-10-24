@@ -21,7 +21,7 @@ import java.util.Set;
 
 /**
  * 数据权限配置
- * @author hupeng
+ * @author Shuo Xing
  * @date 2019-4-1
  */
 @Component

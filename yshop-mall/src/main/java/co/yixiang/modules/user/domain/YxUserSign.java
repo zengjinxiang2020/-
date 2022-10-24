@@ -17,7 +17,7 @@ import lombok.NoArgsConstructor;
  * 签到记录表
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @since 2019-12-05
  */
 @Data

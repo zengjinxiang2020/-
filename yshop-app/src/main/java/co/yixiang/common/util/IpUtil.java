@@ -10,7 +10,7 @@ import java.net.UnknownHostException;
 
 /**
  * 获取IP地址工具类
- * @author hupeng
+ * @author Shuo Xing
  * @date 2020-04-30
  */
 public final class IpUtil {

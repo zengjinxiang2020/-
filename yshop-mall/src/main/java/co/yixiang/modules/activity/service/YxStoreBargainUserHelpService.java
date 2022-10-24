@@ -20,7 +20,7 @@ import java.util.List;
  * 砍价用户帮助表 服务类
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @since 2019-12-21
  */
 public interface YxStoreBargainUserHelpService extends BaseService<YxStoreBargainUserHelp> {

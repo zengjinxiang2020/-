@@ -36,7 +36,7 @@ import java.util.List;
 
 /**
  * 全局异常
- * @author hupeng
+ * @author Shuo Xing
  * @date 2020-04-30
  */
 @ControllerAdvice

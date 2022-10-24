@@ -8,7 +8,7 @@ package co.yixiang.gen.service;
 import co.yixiang.gen.domain.GenConfig;
 
 /**
- * @author Zheng Jie
+ * @author Shuo Xing
  * @date 2019-01-14
  */
 public interface GenConfigService {

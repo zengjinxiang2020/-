@@ -34,7 +34,7 @@ import java.util.Map;
 
 /**
  * @ClassName 微信公众号模板通知
- * @Author hupeng <610796224@qq.com>
+ * @Author Shuo Xing
  * @Date 2020/6/27
  **/
 @Slf4j

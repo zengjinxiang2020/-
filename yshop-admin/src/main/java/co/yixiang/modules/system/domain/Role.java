@@ -21,7 +21,7 @@ import javax.validation.constraints.NotBlank;
 import java.util.Set;
 
 /**
-* @author hupeng
+* @author Shuo Xing
 * @date 2020-05-14
 */
 @Data

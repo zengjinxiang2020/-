@@ -11,7 +11,7 @@ import java.io.Serializable;
  * 签到记录表 查询结果对象
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @date 2019-12-05
  */
 @Data

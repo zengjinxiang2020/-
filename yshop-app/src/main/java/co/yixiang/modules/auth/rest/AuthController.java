@@ -48,7 +48,7 @@ import java.util.Map;
 
 /**
  * @ClassName 认证服务
- * @Author hupeng <610796224@qq.com>
+ * @Author Shuo Xing <610796224@qq.com>
  * @Date 2020/4/30
  **/
 @Slf4j

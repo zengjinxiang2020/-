@@ -8,7 +8,7 @@ package co.yixiang.modules.quartz.service.dto;
 import lombok.Data;
 
 /**
-* @author hupeng
+* @author Shuo Xing
 * @date 2020-05-13
 */
 @Data

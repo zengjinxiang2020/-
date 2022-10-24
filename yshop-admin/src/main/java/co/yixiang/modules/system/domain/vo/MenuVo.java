@@ -13,7 +13,7 @@ import java.util.List;
 
 /**
  * 构建前端路由时用到
- * @author hupeng
+ * @author Shuo Xing
  * @date 2018-12-20
  */
 @Data

@@ -14,7 +14,7 @@ import java.math.BigDecimal;
  * 设置用户等级表 查询结果对象
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @date 2019-12-06
  */
 @Data

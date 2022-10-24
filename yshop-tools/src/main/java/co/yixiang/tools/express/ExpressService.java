@@ -82,23 +82,25 @@ public class ExpressService implements Serializable {
      *
      * @throws Exception
      */
-    private String getOrderTracesByJson(String OrderCode,String ShipperCode, String LogisticCode,String lastFourNumber) throws Exception {
+    private String getOrderTracesByJson(String OrderCode,String shipperCode, String LogisticCode,String lastFourNumber) throws Exception {
         if (!properties.isEnable()) {
             return null;
         }
 
-        //处理顺丰查询轨迹需手机号码后4位
+        //处理极兔速递，百事亨通，申通快递，圆通速递查询轨迹需手机号码后4位
         String requestData;
-        if (ShipperCode.equals(ShipperCodeEnum.SF.getValue())) {
-            requestData = "{'OrderCode':'" + OrderCode + "','ShipperCode':'" + ShipperCode + "','LogisticCode':'" + LogisticCode + "','CustomerName':'" + lastFourNumber + "'}";
-        } else {
-            requestData = "{'OrderCode':'" + OrderCode + "','ShipperCode':'" + ShipperCode + "','LogisticCode':'" + LogisticCode + "'}";
-        }
+//        if (ShipperCodeEnum.contains(shipperCode)) {
+//            requestData = "{'OrderCode':'" + OrderCode + "','ShipperCode':'" + shipperCode + "','LogisticCode':'" + LogisticCode + "','CustomerName':'" + lastFourNumber + "'}";
+//        } else {
+//            requestData = "{'OrderCode':'" + OrderCode + "','ShipperCode':'" + shipperCode + "','LogisticCode':'" + LogisticCode + "'}";
+//        }
+        requestData = "{'OrderCode':'" + OrderCode + "','ShipperCode':'" + shipperCode + "','LogisticCode':'" + LogisticCode + "'}";
+
 
         Map<String, Object> params = new HashMap<>();
         params.put("RequestData", URLEncoder.encode(requestData, "UTF-8"));
         params.put("EBusinessID", properties.getAppId());
-        params.put("RequestType", "1002");
+        params.put("RequestType", "1002"); ////免费即时查询接口指令1002/在途监控即时查询接口指令8001/地图版即时查询接口指令8003
         String dataSign = encrypt(requestData, properties.getAppKey(), "UTF-8");
         params.put("DataSign", URLEncoder.encode(dataSign, "UTF-8"));
         params.put("DataType", "2");

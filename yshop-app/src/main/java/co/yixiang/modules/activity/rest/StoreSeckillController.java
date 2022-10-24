@@ -55,7 +55,7 @@ import java.util.stream.IntStream;
  * 商品秒杀产品前端控制器
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @since 2019-12-14
  */
 @Slf4j

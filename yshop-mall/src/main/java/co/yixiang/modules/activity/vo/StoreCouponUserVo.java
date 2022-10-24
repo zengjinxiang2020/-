@@ -11,7 +11,7 @@ import java.util.Date;
 /**
  * 优惠券发放记录对象StoreCouponUserVO
  *
- * @author hupeng
+ * @author Shuo Xing
  * @date 2020-05-06
  */
 @Getter

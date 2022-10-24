@@ -27,7 +27,7 @@ import java.io.IOException;
 import javax.servlet.http.HttpServletResponse;
 import co.yixiang.domain.PageResult;
 /**
- * @author hupeng
+ * @author Shuo Xing
  * @date 2020-09-03
  */
 @AllArgsConstructor

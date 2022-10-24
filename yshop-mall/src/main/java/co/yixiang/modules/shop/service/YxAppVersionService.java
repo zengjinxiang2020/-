@@ -18,7 +18,7 @@ import java.io.IOException;
 import javax.servlet.http.HttpServletResponse;
 import co.yixiang.domain.PageResult;
 /**
-* @author lioncity
+* @author Shuo Xing
 * @date 2020-12-09
 */
 public interface YxAppVersionService  extends BaseService<YxAppVersion>{

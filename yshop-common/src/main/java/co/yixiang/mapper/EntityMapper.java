@@ -8,7 +8,7 @@ package co.yixiang.mapper;
 import java.util.List;
 
 /**
- * @author Zheng Jie
+ * @author Shuo Xing
  * @date 2018-11-23
  */
 public interface EntityMapper<D, E> {

@@ -8,7 +8,7 @@ package co.yixiang.exception;
 import org.springframework.util.StringUtils;
 
 /**
- * @author Zheng Jie
+ * @author Shuo Xing
  * @date 2018-11-23
  */
 public class EntityNotFoundException extends RuntimeException {

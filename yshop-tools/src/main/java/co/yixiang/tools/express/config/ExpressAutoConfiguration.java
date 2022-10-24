@@ -16,9 +16,10 @@ import co.yixiang.utils.RedisUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 
+import javax.annotation.Resource;
+
 @Configuration(proxyBeanMethods = false)
 public class ExpressAutoConfiguration {
-
 
     private static RedisUtils redisUtil;
 
@@ -28,18 +29,24 @@ public class ExpressAutoConfiguration {
     }
 
     public static ExpressService expressService() {
+        System.out.println("ExpressAutoConfiguration.redisUtils:" + ExpressAutoConfiguration.redisUtil );
         ExpressService expressService = (ExpressService)redisUtil.get(ShopConstants.YSHOP_EXPRESS_SERVICE);
-        if(expressService != null) {
-            return expressService;
-        }
+//        if(expressService != null) {
+//
+//            return expressService;
+//        }
 
         ExpressProperties properties = new ExpressProperties();
         String enable = redisUtil.getY("exp_enable");
         String appId = redisUtil.getY("exp_appId");
         String appKey = redisUtil.getY("exp_appKey");
+//        String enable = "1";
+//        String appId = "1773324";
+//        String appKey = "4b86d566-d49d-4a9c-ac16-a3f301eecd4c";
         properties.setAppId(appId);
         properties.setAppKey(appKey);
 
+        //TODO: enable值为确定值还是从redis中获取？
         if(ShopCommonEnum.ENABLE_2.getValue().toString().equals(enable)){
             properties.setEnable(false);
         }else{

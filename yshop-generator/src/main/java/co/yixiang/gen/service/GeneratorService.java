@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 /**
- * @author Zheng Jie
+ * @author Shuo Xing
  * @date 2019-01-02
  */
 public interface GeneratorService {

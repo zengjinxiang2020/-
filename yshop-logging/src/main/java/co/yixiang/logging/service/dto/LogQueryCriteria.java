@@ -13,7 +13,7 @@ import java.util.List;
 
 /**
  * 日志查询类
- * @author hupeng
+ * @author Shuo Xing
  * @date 2019-6-4 09:23:07
  */
 @Data

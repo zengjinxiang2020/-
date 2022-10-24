@@ -7,7 +7,7 @@ import lombok.Setter;
 
 /**
  * @ClassName 产品结果DTO
- * @Author hupeng <610796224@qq.com>
+ * @Author Shuo Xing <610796224@qq.com>
  * @Date 2020/4/24
  **/
 @Getter

@@ -21,7 +21,7 @@ import java.util.Map;
 
 /**
  * 支付配置
- * @author hupeng
+ * @author Shuo Xing
  * @date 2020/03/01
  */
 @Slf4j

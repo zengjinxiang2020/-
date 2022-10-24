@@ -16,7 +16,7 @@ import java.util.Random;
 
 /**
  * @ClassName OrderUtil
- * @Author hupeng <610796224@qq.com>
+ * @Author Shuo Xing
  * @Date 2019/9/13
  **/
 public class OrderUtil {

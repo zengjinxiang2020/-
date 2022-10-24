@@ -45,7 +45,7 @@ import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author hupeng
+ * @author Shuo Xing
  * @date 2018-11-23
  * 授权、根据token获取用户详细信息
  */

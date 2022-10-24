@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 import java.io.Serializable;
 
 /**
-* @author hupeng
+* @author Shuo Xing
 * @date 2019-6-10 16:32:18
 */
 @Data

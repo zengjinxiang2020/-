@@ -6,7 +6,7 @@ import lombok.Getter;
 import java.util.stream.Stream;
 
 /**
- * @author hupeng
+ * @author Shuo Xing
  * sort关枚举
  */
 @Getter

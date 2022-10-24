@@ -17,7 +17,7 @@ import lombok.Setter;
  * 用户地址表
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @since 2019-10-28
  */
 @Getter

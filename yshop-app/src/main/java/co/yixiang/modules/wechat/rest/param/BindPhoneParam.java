@@ -8,7 +8,7 @@ import javax.validation.constraints.NotBlank;
 
 /**
  * @ClassName BindPhoneParam
- * @Author hupeng <610796224@qq.com>
+ * @Author Shuo Xing <610796224@qq.com>
  * @Date 2020/2/7
  **/
 @Getter

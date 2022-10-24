@@ -10,7 +10,7 @@ import lombok.EqualsAndHashCode;
  * 等级任务设置 查询参数对象
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @date 2019-12-06
  */
 @Data

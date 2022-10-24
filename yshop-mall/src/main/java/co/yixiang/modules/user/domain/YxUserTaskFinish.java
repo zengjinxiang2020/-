@@ -14,7 +14,7 @@ import lombok.EqualsAndHashCode;
  * 用户任务完成记录表
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @since 2019-12-07
  */
 @Data

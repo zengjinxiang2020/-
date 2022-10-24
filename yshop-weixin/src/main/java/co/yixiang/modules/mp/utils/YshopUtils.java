@@ -14,7 +14,7 @@ import com.alibaba.fastjson.JSONObject;
 
 /**
  * @ClassName YshopUtils
- * @Author hupeng <610796224@qq.com>
+ * @Author Shuo Xing
  * @Date 2020/6/27
  **/
 public class YshopUtils {

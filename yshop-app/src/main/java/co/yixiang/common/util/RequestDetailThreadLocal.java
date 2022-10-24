@@ -5,7 +5,7 @@ import co.yixiang.common.bean.RequestDetail;
 
 /**
  * 记录请求详情信息到当前线程中
- * @author hupeng
+ * @author Shuo Xing
  * @date 2020-04-30
  */
 public class RequestDetailThreadLocal {

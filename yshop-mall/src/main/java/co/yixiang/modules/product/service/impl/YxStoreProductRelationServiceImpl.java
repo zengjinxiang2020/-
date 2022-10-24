@@ -44,7 +44,7 @@ import java.util.Map;
  * 商品点赞和收藏表 服务实现类
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @since 2019-10-23
  */
 @Slf4j

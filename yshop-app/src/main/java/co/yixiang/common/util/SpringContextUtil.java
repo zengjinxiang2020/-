@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 
 /**
  *  Spring工具类,获取Spring上下文对象等
- * @author hupeng
+ * @author Shuo Xing
  * @date 2020-04-30
  */
 @Component

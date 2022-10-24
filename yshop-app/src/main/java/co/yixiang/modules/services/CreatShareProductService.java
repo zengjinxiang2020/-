@@ -60,7 +60,7 @@ import static co.yixiang.utils.FileUtil.transformStyle;
 
 /**
  * @ClassName 二维码相关服务
- * @Author hupeng <610796224@qq.com>
+ * @Author Shuo Xing <610796224@qq.com>
  * @Date 2020/6/22
  **/
 @Slf4j

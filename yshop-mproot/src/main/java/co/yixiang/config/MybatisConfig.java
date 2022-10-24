@@ -6,7 +6,7 @@
 package co.yixiang.config;
 
 /**
- * @author ：LionCity
+ * @author ：Shuo Xing
  * @date ：Created in 2020-04-10 15:11
  * @description：MybatisConfig
  * @modified By：

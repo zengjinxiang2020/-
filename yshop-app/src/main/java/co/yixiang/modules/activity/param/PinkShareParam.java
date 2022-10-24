@@ -8,7 +8,7 @@ import javax.validation.constraints.NotBlank;
 
 /**
  * @ClassName BargainShareParam
- * @Author hupeng <610796224@qq.com>
+ * @Author Shuo Xing <610796224@qq.com>
  * @Date 2020/6/20
  **/
 @Getter

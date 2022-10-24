@@ -9,7 +9,7 @@ import javax.validation.constraints.NotBlank;
 
 /**
  * @ClassName 登陆LoginDTO
- * @Author hupeng <610796224@qq.com>
+ * @Author Shuo Xing <610796224@qq.com>
  * @Date 2020/05/02
  **/
 @Getter

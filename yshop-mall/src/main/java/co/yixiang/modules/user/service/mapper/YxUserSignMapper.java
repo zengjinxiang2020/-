@@ -18,7 +18,7 @@ import org.springframework.stereotype.Repository;
  * 签到记录表 Mapper 接口
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @since 2019-12-05
  */
 @Repository

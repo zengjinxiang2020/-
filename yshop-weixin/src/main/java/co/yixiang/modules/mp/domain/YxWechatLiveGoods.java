@@ -20,7 +20,7 @@ import javax.validation.constraints.NotBlank;
 import java.io.Serializable;
 
 /**
-* @author hupeng
+* @author Shuo Xing
 * @date 2020-08-11
 */
 @Data

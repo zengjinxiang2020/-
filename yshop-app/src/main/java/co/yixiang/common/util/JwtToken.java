@@ -26,7 +26,7 @@ import java.util.Optional;
 
 /**
  * @ClassName JwtToken
- * @Author hupeng <610796224@qq.com>
+ * @Author Shuo Xing <610796224@qq.com>
  * @Date 2020/4/30
  **/
 @Component

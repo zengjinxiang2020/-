@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * 测试用
- * @author hupeng
+ * @author Shuo Xing
  * @date 2019-01-08
  */
 @Slf4j

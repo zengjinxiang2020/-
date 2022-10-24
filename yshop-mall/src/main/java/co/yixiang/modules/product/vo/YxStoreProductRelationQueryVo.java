@@ -14,7 +14,7 @@ import java.util.Date;
  * 商品点赞和收藏表 查询结果对象
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @date 2019-10-23
  */
 @Data

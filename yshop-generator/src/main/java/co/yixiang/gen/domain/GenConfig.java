@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 
 /**
  * 代码生成配置
- * @author Zheng Jie
+ * @author Shuo Xing
  * @date 2019-01-03
  */
 @Data
@@ -23,7 +23,7 @@ public class GenConfig {
     public GenConfig(String tableName) {
         this.cover = false;
         this.moduleName = "yshop-mall";
-        this.author = "hupeng";
+        this.author = "Shuo Xing";
         this.pack = "co.yixiang.modules";
         this.tableName = tableName;
     }

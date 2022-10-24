@@ -27,6 +27,7 @@ import co.yixiang.modules.order.param.ExpressParam;
 import co.yixiang.modules.order.service.YxStoreOrderService;
 import co.yixiang.modules.order.service.YxStoreOrderStatusService;
 import co.yixiang.modules.order.service.dto.*;
+import co.yixiang.modules.user.domain.YxUser;
 import co.yixiang.tools.express.ExpressService;
 import co.yixiang.tools.express.config.ExpressAutoConfiguration;
 import co.yixiang.tools.express.dao.ExpressInfo;
@@ -62,7 +63,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 /**
- * @author hupeng
+ * @author Shuo Xing
  * @date 2019-10-14
  */
 @Api(tags = "商城:订单管理")
@@ -320,16 +321,16 @@ public class StoreOrderController {
     @ApiOperation(value = "获取物流信息",notes = "获取物流信息",response = ExpressParam.class)
     public ResponseEntity express( @RequestBody ExpressParam expressInfoDo){
 
-        //顺丰轨迹查询处理
+        //极兔速递，百事亨通，申通快递，圆通速递轨迹查询处理
         String lastFourNumber = "";
-        if (expressInfoDo.getShipperCode().equals(ShipperCodeEnum.SF.getValue())) {
-            YxStoreOrderDto yxStoreOrderDto;
-            yxStoreOrderDto = yxStoreOrderService.getOrderDetail(Long.valueOf(expressInfoDo.getOrderCode()));
-            lastFourNumber = yxStoreOrderDto.getUserPhone();
-            if (lastFourNumber.length()==11) {
-                lastFourNumber = StrUtil.sub(lastFourNumber,lastFourNumber.length(),-4);
-            }
-        }
+//        if (ShipperCodeEnum.contains(expressInfoDo.getShipperCode())) {
+//            YxStoreOrderDto yxStoreOrderDto;
+//            yxStoreOrderDto = yxStoreOrderService.getOrderDetail(Long.valueOf(expressInfoDo.getOrderCode()));
+//            lastFourNumber = yxStoreOrderDto.getUserPhone();
+//            if (lastFourNumber.length()==11) {
+//                lastFourNumber = StrUtil.sub(lastFourNumber,lastFourNumber.length(),-4);
+//            }
+//        }
 
         ExpressService expressService = ExpressAutoConfiguration.expressService();
         ExpressInfo expressInfo = expressService.getExpressInfo(expressInfoDo.getOrderCode(),
@@ -459,7 +460,5 @@ public class StoreOrderController {
 
         return criteria;
     }
-
-
 
 }

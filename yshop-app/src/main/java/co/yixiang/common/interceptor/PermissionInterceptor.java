@@ -31,7 +31,7 @@ import java.util.Optional;
 
 /**
  * 权限拦截器
- * @author hupeng
+ * @author Shuo Xing
  * @date 2020-04-30
  */
 public class PermissionInterceptor extends HandlerInterceptorAdapter {

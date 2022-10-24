@@ -13,7 +13,7 @@ import java.util.Map;
 /**
  * 商品对象VO
  *
- * @author hupeng
+ * @author Shuo Xing
  * @date 2020-04-25
  */
 @NoArgsConstructor

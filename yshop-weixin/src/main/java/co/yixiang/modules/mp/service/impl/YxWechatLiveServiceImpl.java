@@ -62,7 +62,7 @@ import static cn.binarywang.wx.miniapp.constant.WxMaApiUrlConstants.Broadcast.Ro
 
 
 /**
-* @author hupeng
+* @author Shuo Xing
 * @date 2020-08-10
 */
 @Service

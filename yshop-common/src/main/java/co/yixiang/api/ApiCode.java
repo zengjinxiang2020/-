@@ -11,7 +11,7 @@ package co.yixiang.api;
 
 /**
  * API 响应码
- * @author hupeng
+ * @author Shuo Xing
  * @date 2020-04-30
  */
 public enum ApiCode {

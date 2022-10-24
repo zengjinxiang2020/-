@@ -11,7 +11,7 @@ import java.util.List;
 
 /**
  * 商城商品分类CateVO
- * @author hupeng
+ * @author Shuo Xing
  * @since 2020-05-07
  */
 @Getter

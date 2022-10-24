@@ -44,7 +44,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
-* @author hupeng
+* @author Shuo Xing
 * @date 2020-03-03
 */
 @Api(tags = "门店管理")

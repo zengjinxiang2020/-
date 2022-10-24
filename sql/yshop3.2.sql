@@ -487,20 +487,20 @@ CREATE TABLE `gen_config`  (
 -- ----------------------------
 -- Records of gen_config
 -- ----------------------------
-INSERT INTO `gen_config` VALUES (3, 'gen_test', 'Zheng Jie', b'1', 'eladmin-system', 'me.zhengjie.gen', 'E:\\workspace\\me\\front\\eladmin-web\\src\\views\\gen', 'E:\\workspace\\me\\front\\eladmin-web\\src\\api', NULL, '测试生成');
-INSERT INTO `gen_config` VALUES (4, 'yx_material_group', 'hupeng', b'0', 'yshop-shop', 'co.yixiang.modules.shop', 'E:\\output', 'E:\\output\\', NULL, '素材');
-INSERT INTO `gen_config` VALUES (5, 'yx_material', 'hupeng', b'0', 'yshop-shop', 'co.yixiang.modules.shop', 'E:\\output', 'E:\\output\\', NULL, '素材管理');
-INSERT INTO `gen_config` VALUES (6, 'yx_user', 'hupeng', b'0', 'yshop-system', 'co.yixiang.modules', 'aa', 'aa\\', NULL, '用户');
-INSERT INTO `gen_config` VALUES (7, 'yx_wechat_media', 'hupeng', b'0', 'yshop-system', 'co.yixiang.modules', 'E:\\book\\img', 'E:\\book\\img\\', NULL, 'ceshi');
-INSERT INTO `gen_config` VALUES (8, 'yx_user_recharge', 'hupeng', b'0', 'yshop-shop', 'co.yixiang.modules.shop', 'E:\\java\\yxshop-private\\yshop-web\\src\\views\\shop\\recharge', 'E:\\java\\yxshop-private\\yshop-web\\src\\api', '', '充值管理');
-INSERT INTO `gen_config` VALUES (9, 'yx_system_store', 'hupeng', b'0', 'yshop-shop', 'co.yixiang.modules.shop', 'E:\\java\\yxshop-private\\yshop-web\\src\\views\\shop\\store', 'E:\\java\\yxshop-private\\yshop-web\\src\\api', NULL, '门店');
-INSERT INTO `gen_config` VALUES (10, 'yx_system_store_staff', 'hupeng', b'1', 'yshop-shop', 'co.yixiang.modules.shop', 'E:\\java\\yxshop-private\\yshop-web\\src\\views\\shop\\storestaff', 'E:\\java\\yxshop-private\\yshop-web\\src\\api', NULL, '门店店员');
-INSERT INTO `gen_config` VALUES (11, 'yx_store_product_rule', 'hupeng', b'0', 'yshop-mall', 'co.yixiang.modules', 'product', 'product\\', NULL, 'sku规则');
-INSERT INTO `gen_config` VALUES (12, 'yx_shipping_templates', 'hupeng', b'0', 'yshop-mall', 'co.yixiang.modules', 'product', 'product\\', NULL, '运费模板');
-INSERT INTO `gen_config` VALUES (13, 'yx_shipping_templates_region', 'hupeng', b'0', 'yshop-mall', 'co.yixiang.modules', 'product', 'product\\', NULL, '运费模板区域');
-INSERT INTO `gen_config` VALUES (14, 'yx_shipping_templates_free', 'hupeng', b'0', 'yshop-mall', 'co.yixiang.modules', 'product', 'product\\', NULL, '运费模板免费');
-INSERT INTO `gen_config` VALUES (15, 'yx_system_city', 'hupeng', b'0', 'yshop-mall', 'co.yixiang.modules', 'product', 'product\\', NULL, '城市');
-INSERT INTO `gen_config` VALUES (16, 'yx_store_product_relation', 'hupeng', b'0', 'yshop-mall', 'co.yixiang.modules.product', 'd:/', 'd:/', NULL, 'ProductRelation');
+INSERT INTO `gen_config` VALUES (3, 'gen_test', 'Shuo Xing', b'1', 'eladmin-system', 'me.zhengjie.gen', 'E:\\workspace\\me\\front\\eladmin-web\\src\\views\\gen', 'E:\\workspace\\me\\front\\eladmin-web\\src\\api', NULL, '测试生成');
+INSERT INTO `gen_config` VALUES (4, 'yx_material_group', 'Shuo Xing', b'0', 'yshop-shop', 'co.yixiang.modules.shop', 'E:\\output', 'E:\\output\\', NULL, '素材');
+INSERT INTO `gen_config` VALUES (5, 'yx_material', 'Shuo Xing', b'0', 'yshop-shop', 'co.yixiang.modules.shop', 'E:\\output', 'E:\\output\\', NULL, '素材管理');
+INSERT INTO `gen_config` VALUES (6, 'yx_user', 'Shuo Xing', b'0', 'yshop-system', 'co.yixiang.modules', 'aa', 'aa\\', NULL, '用户');
+INSERT INTO `gen_config` VALUES (7, 'yx_wechat_media', 'Shuo Xing', b'0', 'yshop-system', 'co.yixiang.modules', 'E:\\book\\img', 'E:\\book\\img\\', NULL, 'ceshi');
+INSERT INTO `gen_config` VALUES (8, 'yx_user_recharge', 'Shuo Xing', b'0', 'yshop-shop', 'co.yixiang.modules.shop', 'E:\\java\\yxshop-private\\yshop-web\\src\\views\\shop\\recharge', 'E:\\java\\yxshop-private\\yshop-web\\src\\api', '', '充值管理');
+INSERT INTO `gen_config` VALUES (9, 'yx_system_store', 'Shuo Xing', b'0', 'yshop-shop', 'co.yixiang.modules.shop', 'E:\\java\\yxshop-private\\yshop-web\\src\\views\\shop\\store', 'E:\\java\\yxshop-private\\yshop-web\\src\\api', NULL, '门店');
+INSERT INTO `gen_config` VALUES (10, 'yx_system_store_staff', 'Shuo Xing', b'1', 'yshop-shop', 'co.yixiang.modules.shop', 'E:\\java\\yxshop-private\\yshop-web\\src\\views\\shop\\storestaff', 'E:\\java\\yxshop-private\\yshop-web\\src\\api', NULL, '门店店员');
+INSERT INTO `gen_config` VALUES (11, 'yx_store_product_rule', 'Shuo Xing', b'0', 'yshop-mall', 'co.yixiang.modules', 'product', 'product\\', NULL, 'sku规则');
+INSERT INTO `gen_config` VALUES (12, 'yx_shipping_templates', 'Shuo Xing', b'0', 'yshop-mall', 'co.yixiang.modules', 'product', 'product\\', NULL, '运费模板');
+INSERT INTO `gen_config` VALUES (13, 'yx_shipping_templates_region', 'Shuo Xing', b'0', 'yshop-mall', 'co.yixiang.modules', 'product', 'product\\', NULL, '运费模板区域');
+INSERT INTO `gen_config` VALUES (14, 'yx_shipping_templates_free', 'Shuo Xing', b'0', 'yshop-mall', 'co.yixiang.modules', 'product', 'product\\', NULL, '运费模板免费');
+INSERT INTO `gen_config` VALUES (15, 'yx_system_city', 'Shuo Xing', b'0', 'yshop-mall', 'co.yixiang.modules', 'product', 'product\\', NULL, '城市');
+INSERT INTO `gen_config` VALUES (16, 'yx_store_product_relation', 'Shuo Xing', b'0', 'yshop-mall', 'co.yixiang.modules.product', 'd:/', 'd:/', NULL, 'ProductRelation');
 
 -- ----------------------------
 -- Table structure for gen_test
@@ -594,11 +594,11 @@ INSERT INTO `local_storage` VALUES (27, 'list_18-2020013110394988.png', 'list_18
 INSERT INTO `local_storage` VALUES (28, 'list_22-20200131103952926.png', 'list_22', 'png', 'E:\\yshop\\file\\pic\\list_22-20200131103952926.png', 'pic', '28.23KB   ', 'admin', '2020-01-31 10:39:53');
 INSERT INTO `local_storage` VALUES (29, 'list_26-20200131103956836.png', 'list_26', 'png', 'E:\\yshop\\file\\pic\\list_26-20200131103956836.png', 'pic', '28.36KB   ', 'admin', '2020-01-31 10:39:57');
 INSERT INTO `local_storage` VALUES (30, 'list_28-20200131104001169.png', 'list_28', 'png', 'E:\\yshop\\file\\pic\\list_28-20200131104001169.png', 'pic', '28.38KB   ', 'admin', '2020-01-31 10:40:01');
-INSERT INTO `local_storage` VALUES (31, 'list_16-20200207061544740.png', 'list_16', 'png', 'E:\\yshop\\file\\pic\\list_16-20200207061544740.png', 'pic', '28.93KB   ', 'hupeng', '2020-02-07 18:15:45');
-INSERT INTO `local_storage` VALUES (32, 'list_30-2020020706162996.png', 'list_30', 'png', 'E:\\yshop\\file\\pic\\list_30-2020020706162996.png', 'pic', '28.57KB   ', 'hupeng', '2020-02-07 18:16:29');
-INSERT INTO `local_storage` VALUES (33, 'list_16-20200207061714702.png', 'list_16', 'png', 'E:\\yshop\\file\\pic\\list_16-20200207061714702.png', 'pic', '28.93KB   ', 'hupeng', '2020-02-07 18:17:15');
-INSERT INTO `local_storage` VALUES (34, 'list_18-20200207061743361.png', 'list_18', 'png', 'E:\\yshop\\file\\pic\\list_18-20200207061743361.png', 'pic', '29.62KB   ', 'hupeng', '2020-02-07 18:17:43');
-INSERT INTO `local_storage` VALUES (35, 'list_30-20200207062920744.png', 'list_30', 'png', 'E:\\yshop\\file\\pic\\list_30-20200207062920744.png', 'pic', '28.57KB   ', 'hupeng', '2020-02-07 18:29:21');
+INSERT INTO `local_storage` VALUES (31, 'list_16-20200207061544740.png', 'list_16', 'png', 'E:\\yshop\\file\\pic\\list_16-20200207061544740.png', 'pic', '28.93KB   ', 'Shuo Xing', '2020-02-07 18:15:45');
+INSERT INTO `local_storage` VALUES (32, 'list_30-2020020706162996.png', 'list_30', 'png', 'E:\\yshop\\file\\pic\\list_30-2020020706162996.png', 'pic', '28.57KB   ', 'Shuo Xing', '2020-02-07 18:16:29');
+INSERT INTO `local_storage` VALUES (33, 'list_16-20200207061714702.png', 'list_16', 'png', 'E:\\yshop\\file\\pic\\list_16-20200207061714702.png', 'pic', '28.93KB   ', 'Shuo Xing', '2020-02-07 18:17:15');
+INSERT INTO `local_storage` VALUES (34, 'list_18-20200207061743361.png', 'list_18', 'png', 'E:\\yshop\\file\\pic\\list_18-20200207061743361.png', 'pic', '29.62KB   ', 'Shuo Xing', '2020-02-07 18:17:43');
+INSERT INTO `local_storage` VALUES (35, 'list_30-20200207062920744.png', 'list_30', 'png', 'E:\\yshop\\file\\pic\\list_30-20200207062920744.png', 'pic', '28.57KB   ', 'Shuo Xing', '2020-02-07 18:29:21');
 INSERT INTO `local_storage` VALUES (36, '05ea40b831858a8cf423aa709840507c-20200228083801500.png', '05ea40b831858a8cf423aa709840507c', 'png', 'E:\\yshop\\file\\pic\\05ea40b831858a8cf423aa709840507c-20200228083801500.png', 'pic', '5.19KB   ', 'admin', '2020-02-28 20:38:02');
 INSERT INTO `local_storage` VALUES (37, '05ea40b831858a8cf423aa709840507c-20200311043711341.png', '05ea40b831858a8cf423aa709840507c', 'png', 'E:\\yshop\\file\\pic\\05ea40b831858a8cf423aa709840507c-20200311043711341.png', 'pic', '5.19KB   ', 'admin', '2020-03-11 16:37:11');
 INSERT INTO `local_storage` VALUES (38, '秒杀-2020031104371672.png', '秒杀', 'png', 'E:\\yshop\\file\\pic\\秒杀-2020031104371672.png', 'pic', '6.07KB   ', 'admin', '2020-03-11 16:37:16');
@@ -2597,8 +2597,8 @@ CREATE TABLE `yx_store_product_rule`  (
 -- ----------------------------
 -- Records of yx_store_product_rule
 -- ----------------------------
-INSERT INTO `yx_store_product_rule` VALUES (10, '图文', '[{\"value\": \"纸张\", \"detail\": [\"A4\", \"A3\"]}, {\"value\": \"颜色\", \"detail\": [\"白色\", \"红色\"]}]', '2020-06-29 13:46:52', '2020-06-29 15:57:28', 0);
-INSERT INTO `yx_store_product_rule` VALUES (24, '手机', '[{\"value\": \"颜色\", \"detail\": [\"黑色\", \"白色\"]}, {\"value\": \"尺寸\", \"detail\": [\"5寸\", \"7寸\"]}]', '2020-06-29 15:55:51', '2020-07-04 19:50:14', 0);
+-- INSERT INTO `yx_store_product_rule` VALUES (10, '图文', '[{\"value\": \"纸张\", \"detail\": [\"A4\", \"A3\"]}, {\"value\": \"颜色\", \"detail\": [\"白色\", \"红色\"]}]', '2020-06-29 13:46:52', '2020-06-29 15:57:28', 0);
+-- INSERT INTO `yx_store_product_rule` VALUES (24, '手机', '[{\"value\": \"颜色\", \"detail\": [\"黑色\", \"白色\"]}, {\"value\": \"尺寸\", \"detail\": [\"5寸\", \"7寸\"]}]', '2020-06-29 15:55:51', '2020-07-04 19:50:14', 0);
 
 -- ----------------------------
 -- Table structure for yx_store_seckill

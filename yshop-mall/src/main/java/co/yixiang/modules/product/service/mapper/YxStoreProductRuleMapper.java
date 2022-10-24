@@ -14,7 +14,7 @@ import co.yixiang.modules.product.domain.YxStoreProductRule;
 import org.springframework.stereotype.Repository;
 
 /**
-* @author hupeng
+* @author Shuo Xing
 * @date 2020-06-28
 */
 @Repository

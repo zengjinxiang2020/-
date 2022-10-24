@@ -8,7 +8,7 @@ package co.yixiang.modules.mp.service.dto;
 import lombok.Data;
 
 /**
-* @author hupeng
+* @author Shuo Xing
 * @date 2020-05-12
 */
 @Data

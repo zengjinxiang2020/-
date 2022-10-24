@@ -6,7 +6,7 @@ import org.springframework.boot.ApplicationRunner;
 
 /**
  * 初始化站点统计
- * @author Zheng Jie
+ * @author Shuo Xing
  */
 //@Component
 public class VisitsInitialization implements ApplicationRunner {

@@ -11,7 +11,7 @@ import java.io.Serializable;
  * 快递公司表 查询结果对象
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @date 2019-12-13
  */
 @Data

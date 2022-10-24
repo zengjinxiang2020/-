@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
-* @author hupeng
+* @author Shuo Xing
 * @date 2019-11-10
 */
 @Api(tags = "商城:优惠券发放记录管理")

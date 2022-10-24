@@ -13,7 +13,7 @@ import co.yixiang.modules.dict.domain.Dict;
 import org.springframework.stereotype.Repository;
 
 /**
-* @author hupeng
+* @author Shuo Xing
 * @date 2020-05-14
 */
 @Repository

@@ -11,7 +11,7 @@ import lombok.Setter;
 import javax.validation.constraints.NotBlank;
 
 /**
- * @author hupeng
+ * @author Shuo Xing
  * @date 2018-11-30
  */
 @Getter

@@ -21,7 +21,7 @@ import java.util.Arrays;
 /**
  * WebMvcConfigurer
  *
- * @author hupeng
+ * @author Shuo Xing
  * @date 2018-11-30
  */
 @Configuration(proxyBeanMethods = false)

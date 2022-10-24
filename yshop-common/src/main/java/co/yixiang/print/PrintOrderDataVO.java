@@ -15,7 +15,7 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 
 /**
- * @author ：LionCity
+ * @author ：Shuo Xing
  * @date ：Created in 2020-05-11 10:33
  * @description：打印数据VO
  * @modified By：

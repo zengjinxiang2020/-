@@ -33,7 +33,7 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * @author hupeng
+ * @author Shuo Xing
  */
 @Configuration(proxyBeanMethods = false)
 @EnableWebSecurity

@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  * @ClassName 团长拼团数据PinkAllDto
- * @Author hupeng <610796224@qq.com>
+ * @Author Shuo Xing <610796224@qq.com>
  * @Date 2020/6/20
  **/
 @Getter

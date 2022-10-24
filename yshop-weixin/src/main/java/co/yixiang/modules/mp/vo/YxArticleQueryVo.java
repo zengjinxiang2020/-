@@ -13,7 +13,7 @@ import java.io.Serializable;
  * 文章管理表 查询结果对象
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @date 2019-10-02
  */
 @Data

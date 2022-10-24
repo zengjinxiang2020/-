@@ -15,7 +15,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
-* @author hupeng
+* @author Shuo Xing
 * @date 2020-05-12
 */
 

@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 import java.io.Serializable;
 
 /**
- * @author ：LionCity
+ * @author ：Shuo Xing
  * @date ：Created in 2020-05-11 11:01
  * @description：门店销售数据
  * @modified By：

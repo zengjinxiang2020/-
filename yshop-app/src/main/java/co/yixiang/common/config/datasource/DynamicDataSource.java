@@ -9,7 +9,7 @@ import java.util.Map;
 
 /**
  * @ClassName 动态数据源
- * @Author hupeng <610796224@qq.com>
+ * @Author Shuo Xing <610796224@qq.com>
  * @Date 2020/4/30
  **/
 public class DynamicDataSource extends AbstractRoutingDataSource

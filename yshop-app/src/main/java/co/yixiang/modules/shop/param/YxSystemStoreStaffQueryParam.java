@@ -10,7 +10,7 @@ import lombok.EqualsAndHashCode;
  * 门店店员表 查询参数对象
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @date 2020-03-23
  */
 @Data

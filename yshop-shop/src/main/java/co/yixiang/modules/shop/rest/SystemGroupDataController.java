@@ -35,7 +35,7 @@ import java.util.Objects;
 import static co.yixiang.constant.ShopConstants.YSHOP_SECKILL_TIME;
 
 /**
- * @author hupeng
+ * @author Shuo Xing
  * @date 2019-10-18
  */
 @Api(tags = "商城:数据配置管理")

@@ -12,8 +12,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.Resource;
 
 /**
- * @author ：LionCity
- * @date ：Created in 2019/10/9 10:40
+ * @author: Shuo Xing
+ * @date: Created in 2019/10/9 10:40
  * @description：Dozer转换
  * @modified By：
  * @version: 1.0

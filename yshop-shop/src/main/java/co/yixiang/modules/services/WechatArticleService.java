@@ -27,7 +27,7 @@ import java.util.List;
 
 /**
  * @ClassName WechatArticleService
- * @Author hupeng <610796224@qq.com>
+ * @Author Shuo Xing <610796224@qq.com>
  * @Date 2020/7/2
  **/
 @Service

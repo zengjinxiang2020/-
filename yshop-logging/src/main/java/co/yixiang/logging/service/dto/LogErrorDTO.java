@@ -11,7 +11,7 @@ import java.io.Serializable;
 import java.sql.Timestamp;
 
 /**
-* @author hupeng
+* @author Shuo Xing
 * @date 2019-5-22
 */
 @Data

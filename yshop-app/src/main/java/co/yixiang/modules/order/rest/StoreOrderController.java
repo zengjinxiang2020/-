@@ -65,7 +65,7 @@ import java.util.stream.Collectors;
  * 订单控制器
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @since 2019-10-27
  */
 @Slf4j
@@ -432,16 +432,16 @@ public class StoreOrderController {
     @ApiOperation(value = "获取物流信息", notes = "获取物流信息")
     public ApiResult<ExpressInfo> express(@RequestBody ExpressParam expressInfoDo) {
 
-        //顺丰轨迹查询处理
+        //极兔速递，百事亨通，申通快递，圆通速递轨迹查询处理
         String lastFourNumber = "";
-        if (expressInfoDo.getShipperCode().equals(ShipperCodeEnum.SF.getValue())) {
-            YxStoreOrderDto yxStoreOrderDto;
-            yxStoreOrderDto = storeOrderService.getOrderDetail(Long.valueOf(expressInfoDo.getOrderCode()));
-            lastFourNumber = yxStoreOrderDto.getUserPhone();
-            if (lastFourNumber.length() == 11) {
-                lastFourNumber = StrUtil.sub(lastFourNumber, lastFourNumber.length(), -4);
-            }
-        }
+//        if (ShipperCodeEnum.contains(expressInfoDo.getShipperCode())) {
+//            YxStoreOrderDto yxStoreOrderDto;
+//            yxStoreOrderDto = storeOrderService.getOrderDetail(Long.valueOf(expressInfoDo.getOrderCode()));
+//            lastFourNumber = yxStoreOrderDto.getUserPhone();
+//            if (lastFourNumber.length() == 11) {
+//                lastFourNumber = StrUtil.sub(lastFourNumber, lastFourNumber.length(), -4);
+//            }
+//        }
 
         ExpressService expressService = ExpressAutoConfiguration.expressService();
         ExpressInfo expressInfo = expressService.getExpressInfo(expressInfoDo.getOrderCode(),

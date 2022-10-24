@@ -11,7 +11,7 @@ import co.yixiang.tools.domain.vo.EmailVo;
 import org.springframework.scheduling.annotation.Async;
 
 /**
-* @author hupeng
+* @author Shuo Xing
 * @date 2020-05-13
 */
 public interface EmailConfigService  extends BaseService<EmailConfig>{

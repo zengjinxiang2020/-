@@ -13,7 +13,7 @@ import co.yixiang.modules.mp.domain.YxWechatLiveGoods;
 import org.springframework.stereotype.Repository;
 
 /**
-* @author hupeng
+* @author Shuo Xing
 * @date 2020-08-11
 */
 @Repository

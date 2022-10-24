@@ -9,7 +9,7 @@ import java.io.Serializable;
 
 /**
  * @ClassName UserEditParam
- * @Author hupeng <610796224@qq.com>
+ * @Author Shuo Xing <610796224@qq.com>
  * @Date 2020/02/07
  **/
 @Data

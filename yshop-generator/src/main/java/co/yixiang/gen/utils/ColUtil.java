@@ -12,7 +12,7 @@ import org.apache.commons.configuration.PropertiesConfiguration;
 /**
  * sql字段转java
  *
- * @author Zheng Jie
+ * @author Shuo Xing
  * @date 2019-01-03
  */
 public class ColUtil {

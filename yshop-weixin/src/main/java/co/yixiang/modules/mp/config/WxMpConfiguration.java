@@ -35,7 +35,7 @@ import static me.chanjar.weixin.common.api.WxConsts.XmlMsgType;
 
 /**
  * 公众号配置
- * @author hupeng
+ * @author Shuo Xing
  * @date 2020/01/20
  */
 @Configuration(proxyBeanMethods = false)

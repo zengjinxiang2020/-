@@ -9,7 +9,7 @@ import java.io.Serializable;
 
 /**
  * @ClassName OrderRefundParam
- * @Author hupeng <610796224@qq.com>
+ * @Author Shuo Xing <610796224@qq.com>
  * @Date 2019/11/26
  **/
 @Data

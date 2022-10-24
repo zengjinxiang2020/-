@@ -14,7 +14,7 @@ import java.util.Map;
 /**
  * 商品对象DTO
  *
- * @author hupeng
+ * @author Shuo Xing
  * @date 2020-04-23
  */
 @Getter

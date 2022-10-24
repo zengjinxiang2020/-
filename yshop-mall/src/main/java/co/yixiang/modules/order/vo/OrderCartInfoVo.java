@@ -12,7 +12,7 @@ import java.io.Serializable;
  * 订单商品对象
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @date 2019-11-03
  */
 @Data

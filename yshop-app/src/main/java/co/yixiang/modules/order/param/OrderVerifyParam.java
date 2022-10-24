@@ -8,7 +8,7 @@ import java.io.Serializable;
 
 /**
  * @ClassName OrderVerifyParam
- * @Author hupeng <610796224@qq.com>
+ * @Author Shuo Xing <610796224@qq.com>
  * @Date 2020/03/05
  **/
 @Data

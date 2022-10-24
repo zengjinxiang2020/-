@@ -23,7 +23,7 @@ import org.springframework.data.redis.listener.RedisMessageListenerContainer;
 
 /**
  * redis监听配置
- * @author hupeng
+ * @author Shuo Xing
  * @since 2020-02-27
  */
 

@@ -14,7 +14,7 @@ import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
 /**
-* @author lioncity
+* @author Shuo Xing
 * @date 2020-12-09
 */
 @Repository

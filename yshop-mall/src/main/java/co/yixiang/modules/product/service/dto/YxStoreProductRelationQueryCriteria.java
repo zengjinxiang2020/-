@@ -13,7 +13,7 @@ import java.util.List;
 import co.yixiang.annotation.Query;
 
 /**
- * @author hupeng
+ * @author Shuo Xing
  * @date 2020-09-03
  */
 @Data

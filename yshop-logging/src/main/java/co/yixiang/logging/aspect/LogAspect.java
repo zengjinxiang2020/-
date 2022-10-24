@@ -23,7 +23,7 @@ import org.springframework.stereotype.Component;
 import javax.servlet.http.HttpServletRequest;
 
 /**
- * @author hupeng
+ * @author Shuo Xing
  * @date 2018-11-24
  */
 @Component

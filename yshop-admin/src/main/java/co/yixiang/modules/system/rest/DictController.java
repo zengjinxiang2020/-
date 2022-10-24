@@ -33,7 +33,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
-* @author hupeng
+* @author Shuo Xing
 * @date 2019-04-10
 */
 @Api(tags = "系统：字典管理")

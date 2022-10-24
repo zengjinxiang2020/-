@@ -15,7 +15,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 /**
-* @author hupeng
+* @author Shuo Xing
 * @date 2020-05-13
 */
 @Data

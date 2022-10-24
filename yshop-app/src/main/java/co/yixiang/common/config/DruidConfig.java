@@ -17,7 +17,7 @@ import java.util.Map;
 
 /**
  * @ClassName druid 配置多数据源
- * @Author hupeng <610796224@qq.com>
+ * @Author Shuo Xing <610796224@qq.com>
  * @Date 2020/4/30
  **/
 @Configuration(proxyBeanMethods = false)

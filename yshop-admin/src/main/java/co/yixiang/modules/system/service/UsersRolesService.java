@@ -11,7 +11,7 @@ import co.yixiang.common.service.BaseService;
 import co.yixiang.modules.system.domain.UsersRoles;
 
 /**
-* @author hupeng
+* @author Shuo Xing
 * @date 2020-05-16
 */
 public interface UsersRolesService  extends BaseService<UsersRoles>{

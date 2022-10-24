@@ -19,7 +19,7 @@ import java.util.Map;
  * 秒杀产品表 查询结果对象
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @date 2019-12-17
  */
 @Data

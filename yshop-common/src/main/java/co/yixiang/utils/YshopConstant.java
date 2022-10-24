@@ -7,7 +7,7 @@ package co.yixiang.utils;
 
 /**
  * 常用静态常量
- * @author Zheng Jie
+ * @author Shuo Xing
  * @date 2018-12-26
  */
 public class YshopConstant {

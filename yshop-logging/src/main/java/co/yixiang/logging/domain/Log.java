@@ -14,7 +14,7 @@ import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 /**
- * @author hupeng
+ * @author Shuo Xing
  * @date 2018-11-24
  */
 @Data

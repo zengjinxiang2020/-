@@ -16,6 +16,7 @@ import co.yixiang.common.bean.LocalUser;
 import co.yixiang.logging.aop.log.AppLog;
 import co.yixiang.common.interceptor.AuthCheck;
 import co.yixiang.modules.manage.param.OrderPriceParam;
+import co.yixiang.modules.manage.param.OrderTakeGoodsParam;
 import co.yixiang.modules.manage.param.ShoperQueryParam;
 import co.yixiang.modules.order.param.OrderDeliveryParam;
 import co.yixiang.modules.order.param.OrderRefundParam;
@@ -48,7 +49,7 @@ import java.util.Map;
 
 /**
  * @ClassName ShoperController
- * @Author hupeng <610796224@qq.com>
+ * @Author Shuo Xing
  * @Date 2019/11/25
  **/
 @Slf4j
@@ -139,6 +140,19 @@ public class ShoperController {
         storeOrderService.editOrderPrice(param.getOrderId(),param.getPrice());
         return ApiResult.ok();
     }
+
+    /**
+     * 订单拿货状态修改
+     */
+    @AppLog(value = "订单拿货状态修改", type = 1)
+    @AuthCheck
+    @PostMapping("/admin/order/takegoods")
+    @ApiOperation(value = "订单拿货状态修改",notes = "订单拿货状态修改")
+    public ApiResult<Boolean> orderTakeGoods(@Validated @RequestBody OrderTakeGoodsParam param){
+        storeOrderService.editOrderTakeGoods(param.getOrderId(),param.getTakeGoods());
+        return ApiResult.ok();
+    }
+
 
     /**
      * 快递公司

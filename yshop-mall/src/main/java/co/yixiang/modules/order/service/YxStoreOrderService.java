@@ -23,6 +23,7 @@ import co.yixiang.modules.order.vo.ShoperOrderTimeDataVo;
 import co.yixiang.modules.order.vo.UserOrderCountVo;
 import co.yixiang.modules.order.vo.YxStoreOrderQueryVo;
 import co.yixiang.modules.user.domain.YxUser;
+import co.yixiang.tools.express.dao.ExpressInfo;
 import org.springframework.data.domain.Pageable;
 
 import javax.servlet.http.HttpServletResponse;
@@ -32,7 +33,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
-* @author hupeng
+* @author Shuo Xing
 * @date 2020-05-12
 */
 public interface YxStoreOrderService  extends BaseService<YxStoreOrder>{
@@ -57,8 +58,6 @@ public interface YxStoreOrderService  extends BaseService<YxStoreOrder>{
      * @return ConfirmOrderVO
      */
     ConfirmOrderVo confirmOrder(YxUser yxUser, String cartIds);
-
-
 
     /**
      * 确认订单退款
@@ -91,6 +90,13 @@ public interface YxStoreOrderService  extends BaseService<YxStoreOrder>{
      * @param price 价格
      */
     void editOrderPrice(String orderId,String price);
+
+    /**
+     * 修改订单拿货状态
+     * @param orderId 单号
+     * @param takeGoods 拿货状态 0待拿货 1备货中 2已备货
+     */
+    void editOrderTakeGoods(String orderId,Integer takeGoods);
 
     /**
      * 订单每月统计数据

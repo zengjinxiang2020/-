@@ -20,7 +20,7 @@ import java.util.List;
  * 订单表 查询结果对象
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @date 2019-10-27
  */
 @Data
@@ -101,6 +101,9 @@ public class YxStoreOrderQueryVo implements Serializable {
 
     @ApiModelProperty(value = "订单状态（-1 : 申请退款 -2 : 退货成功 0：待发货；1：待收货；2：已收货；3：待评价；-1：已退款）")
     private Integer status;
+
+    @ApiModelProperty(value = "拿货状态（0 ：待拿货 1 ：备货中 2 ：已备货）")
+    private Integer takeGoods;
 
     @ApiModelProperty(value = "0 未退款 1 申请中 2 已退款")
     private Integer refundStatus;

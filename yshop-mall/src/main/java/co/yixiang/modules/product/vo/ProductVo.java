@@ -14,7 +14,7 @@ import java.util.Map;
  * 商品dto
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @date 2019-10-23
  */
 @Data

@@ -30,7 +30,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
-* @author hupeng
+* @author Shuo Xing
 * @date 2019-12-12
 */
 @Api(tags = "商城:快递管理")

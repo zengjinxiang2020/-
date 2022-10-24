@@ -9,7 +9,7 @@ import co.yixiang.tools.domain.VerificationCode;
 import co.yixiang.tools.domain.vo.EmailVo;
 
 /**
- * @author hupeng
+ * @author Shuo Xing
  * @date 2018-12-26
  */
 public interface VerificationCodeService {

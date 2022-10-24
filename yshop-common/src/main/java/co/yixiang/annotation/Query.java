@@ -7,7 +7,7 @@
 package co.yixiang.annotation;
 
 /**
- * @author Zheng Jie
+ * @author Shuo Xing
  * @date 2019-6-4 13:52:30
  *//*
 
@@ -68,7 +68,7 @@ public @interface Query {
 
     */
 /**
-     * @author Zheng Jie
+     * @author Shuo Xing
      * 适用于简单连接查询，复杂的请自定义该注解，或者使用sql查询
      *//*
 

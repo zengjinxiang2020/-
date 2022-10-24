@@ -10,7 +10,7 @@ import co.yixiang.tools.domain.AlipayConfig;
 import co.yixiang.tools.domain.vo.TradeVo;
 
 /**
-* @author hupeng
+* @author Shuo Xing
 * @date 2020-05-13
 */
 public interface AlipayConfigService  extends BaseService<AlipayConfig>{

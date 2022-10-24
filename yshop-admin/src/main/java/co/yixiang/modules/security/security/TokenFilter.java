@@ -41,6 +41,7 @@ public class TokenFilter extends GenericFilterBean {
             throws IOException, ServletException {
         HttpServletRequest httpServletRequest = (HttpServletRequest) servletRequest;
 
+        //获取本地请求的URI
         String requestRri = httpServletRequest.getRequestURI();
 
         // 验证 token 是否存在

@@ -13,7 +13,7 @@ import co.yixiang.modules.template.domain.YxShippingTemplatesRegion;
 import org.springframework.stereotype.Repository;
 
 /**
-* @author hupeng
+* @author Shuo Xing
 * @date 2020-06-29
 */
 @Repository

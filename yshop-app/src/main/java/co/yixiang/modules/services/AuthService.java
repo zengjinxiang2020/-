@@ -53,7 +53,7 @@ import java.util.List;
 
 /**
  * @ClassName 登陆认证服务类
- * @Author hupeng <610796224@qq.com>
+ * @Author Shuo Xing <610796224@qq.com>
  * @Date 2020/6/14
  **/
 @Slf4j

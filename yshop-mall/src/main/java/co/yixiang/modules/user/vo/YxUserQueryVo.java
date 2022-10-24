@@ -15,7 +15,7 @@ import java.math.BigDecimal;
  * 用户表 查询结果对象
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @date 2019-10-16
  */
 @Data

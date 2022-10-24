@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 
 /**
  * 表的数据信息
- * @author Zheng Jie
+ * @author Shuo Xing
  * @date 2019-01-02
  */
 @Data

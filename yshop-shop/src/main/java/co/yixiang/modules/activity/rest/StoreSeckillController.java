@@ -42,7 +42,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 /**
- * @author hupeng
+ * @author Shuo Xing
  * @date 2019-12-14
  */
 @Api(tags = "商城:秒杀管理")

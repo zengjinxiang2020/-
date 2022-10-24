@@ -23,7 +23,7 @@ import java.util.List;
  * 签到记录表 服务类
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @since 2019-12-05
  */
 public interface YxUserSignService extends BaseService<YxUserSign> {

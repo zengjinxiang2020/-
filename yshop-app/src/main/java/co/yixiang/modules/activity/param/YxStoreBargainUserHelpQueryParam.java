@@ -13,7 +13,7 @@ import javax.validation.constraints.NotBlank;
  * 砍价用户帮助表 查询参数对象
  * </p>
  *
- * @author hupeng
+ * @author Shuo Xing
  * @date 2019-12-21
  */
 @Data
