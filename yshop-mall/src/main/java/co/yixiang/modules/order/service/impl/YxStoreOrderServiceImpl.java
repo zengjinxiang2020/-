@@ -61,6 +61,7 @@ import co.yixiang.modules.shop.domain.YxSystemStore;
 import co.yixiang.modules.shop.service.YxSystemConfigService;
 import co.yixiang.modules.shop.service.YxSystemStoreService;
 import co.yixiang.modules.shop.service.YxSystemStoreStaffService;
+import co.yixiang.modules.shop.service.mapper.SystemStoreMapper;
 import co.yixiang.modules.template.domain.YxShippingTemplates;
 import co.yixiang.modules.template.domain.YxShippingTemplatesFree;
 import co.yixiang.modules.template.domain.YxShippingTemplatesRegion;
@@ -81,6 +82,8 @@ import co.yixiang.tools.service.AlipayConfigService;
 import co.yixiang.utils.FileUtil;
 import co.yixiang.utils.OrderUtil;
 import co.yixiang.utils.RedisUtils;
+import co.yixiang.utils.location.GetTencentLocationVO;
+import co.yixiang.utils.location.LocationUtils;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
@@ -117,7 +120,6 @@ public class YxStoreOrderServiceImpl extends BaseServiceImpl<StoreOrderMapper, Y
 
     @Autowired
     private IGenerator generator;
-
 
     @Autowired
     private YxStorePinkService storePinkService;
@@ -188,8 +190,8 @@ public class YxStoreOrderServiceImpl extends BaseServiceImpl<StoreOrderMapper, Y
     @Autowired
     private StoreAfterSalesService storeAfterSalesService;
 
-//    @Autowired
-//    private BaiduService baiduService;
+    @Autowired
+    private SystemStoreMapper systemStoreMapper;
 
 
     /**
@@ -204,6 +206,7 @@ public class YxStoreOrderServiceImpl extends BaseServiceImpl<StoreOrderMapper, Y
         Long uid = yxUser.getUid();
         Map<String, Object> cartGroup = yxStoreCartService.getUserProductCartList(uid,
                 cartIds, ShopConstants.YSHOP_ONE_NUM);
+
         if (ObjectUtil.isNotEmpty(cartGroup.get("invalid"))) {
             throw new YshopException("有失效的商品请重新提交");
         }
@@ -242,6 +245,7 @@ public class YxStoreOrderServiceImpl extends BaseServiceImpl<StoreOrderMapper, Y
                 .eq(YxUserAddress::getIsDefault, ShopCommonEnum.DEFAULT_1.getValue()), false);
 
         List<YxStoreCartQueryVo> cartInfo = (List<YxStoreCartQueryVo>) cartGroup.get("valid");
+        //设置邮费和同城配送费用的方法
         PriceGroupDto priceGroup = this.getOrderPriceGroup(cartInfo, userAddress);
 
         //判断积分是否满足订单额度
@@ -310,14 +314,20 @@ public class YxStoreOrderServiceImpl extends BaseServiceImpl<StoreOrderMapper, Y
         }
         PriceGroupDto priceGroup = this.getOrderPriceGroup(cacheDTO.getCartInfo(), userAddress);
         BigDecimal payPostage = priceGroup.getStorePostage();
+        BigDecimal distribution = priceGroup.getDistribution();
 
         Integer shippingTypeI = Integer.valueOf(shippingType);
         //1-配送 2-到店 3-同城
-        if (OrderInfoEnum.SHIPPIING_TYPE_1.getValue().equals(shippingTypeI) || OrderInfoEnum.SHIPPIING_TYPE_3.getValue().equals(shippingTypeI)) {
+        if (OrderInfoEnum.SHIPPIING_TYPE_1.getValue().equals(shippingTypeI)) {
+            //快递费用
             payPrice = NumberUtil.add(payPrice, payPostage);
+        } else if( OrderInfoEnum.SHIPPIING_TYPE_3.getValue().equals(shippingTypeI) ){
+            //同城配送费用
+            payPrice = NumberUtil.add(payPrice, distribution);
         } else {
             payPostage = BigDecimal.ZERO;
         }
+
 
         Long combinationId = null;
         Long seckillId = null;
@@ -385,6 +395,7 @@ public class YxStoreOrderServiceImpl extends BaseServiceImpl<StoreOrderMapper, Y
                 .totalPrice(cacheDTO.getPriceGroup().getTotalPrice())
                 .payPrice(payPrice)
                 .payPostage(payPostage)
+                .distribution(distribution)
                 .couponPrice(couponPrice)
                 .deductionPrice(deductionPrice)
                 .usedIntegral(usedIntegral)
@@ -492,6 +503,7 @@ public class YxStoreOrderServiceImpl extends BaseServiceImpl<StoreOrderMapper, Y
         storeOrder.setPayPrice(computeVo.getPayPrice());
         storeOrder.setPayPostage(computeVo.getPayPostage());
         storeOrder.setDeductionPrice(computeVo.getDeductionPrice());
+        storeOrder.setDistribution(computeVo.getDistribution());
         storeOrder.setPaid(OrderInfoEnum.PAY_STATUS_0.getValue());
         storeOrder.setPayType(param.getPayType());
         if (isIntegral) {
@@ -1973,6 +1985,24 @@ public class YxStoreOrderServiceImpl extends BaseServiceImpl<StoreOrderMapper, Y
      * 获取订单价格
      *
      * @param cartInfo 购物车列表
+     * @param userAddress 用户地址
+     * @param distribution 同城配送价格
+     * @return PriceGroupDto
+     */
+    private PriceGroupDto getOrderPriceGroup(List<YxStoreCartQueryVo> cartInfo, YxUserAddress userAddress, BigDecimal distribution) {
+        if ( ObjectUtil.isNull(distribution) ){
+            return getOrderPriceGroup(cartInfo, userAddress);
+        }
+        PriceGroupDto orderPriceGroup = getOrderPriceGroup(cartInfo, userAddress);
+        orderPriceGroup.setDistribution(distribution);
+        return orderPriceGroup;
+
+    }
+
+    /**
+     * 获取订单价格
+     *
+     * @param cartInfo 购物车列表
      * @return PriceGroupDto
      */
     private PriceGroupDto getOrderPriceGroup(List<YxStoreCartQueryVo> cartInfo, YxUserAddress userAddress) {
@@ -1992,28 +2022,19 @@ public class YxStoreOrderServiceImpl extends BaseServiceImpl<StoreOrderMapper, Y
         BigDecimal costPrice = this.getOrderSumPrice(cartInfo, "costPrice");//获取订单成本价
         BigDecimal vipPrice = this.getOrderSumPrice(cartInfo, "vipTruePrice");//获取订单会员优惠金额
         BigDecimal payIntegral = this.getOrderSumPrice(cartInfo, "payIntegral");//获取订单需要的积分
-        System.out.println("storePostage before: " + storePostage);
-        boolean flag = storeFreePostage.compareTo(BigDecimal.ZERO) != 0 && totalPrice.compareTo(storeFreePostage) <= 0;
-        boolean flag1 = storeFreePostage.compareTo(BigDecimal.ZERO) != 0;
-        boolean flag2 = totalPrice.compareTo(storeFreePostage) <= 0;
-        System.out.println(flag);
-        System.out.println(flag1);
-        System.out.println(flag2);
-        System.out.println("totalPrice:" + totalPrice);
-        System.out.println("storeFreePostage:" + storeFreePostage);
         //如果设置满包邮0 表示全局包邮，如果设置大于0表示满这价格包邮，否则走运费模板算法
 //        if (storeFreePostage.compareTo(BigDecimal.ZERO) != 0 && totalPrice.compareTo(storeFreePostage) <= 0) {
         if (storeFreePostage.compareTo(BigDecimal.ZERO) != 0 && totalPrice.compareTo(storeFreePostage) > 0) {
-            System.out.println("storeFreePostageStr after: " + storeFreePostageStr);
 
             storePostage = this.handlePostage(cartInfo, userAddress);
-            System.out.println("storePostage after: " + storePostage);
 
         }
         if (cartInfo.size() == 1 && cartInfo.get(0).getProductInfo().getIsIntegral() != null
                 && cartInfo.get(0).getProductInfo().getIsIntegral() == 1) {
             totalPrice = BigDecimal.ZERO;
         }
+        //计算同城配送费用
+        BigDecimal distribution = this.handleDistributionToPrice(cartInfo, userAddress);
 
         PriceGroupDto priceGroupDTO = new PriceGroupDto();
         priceGroupDTO.setStorePostage(storePostage);
@@ -2022,7 +2043,56 @@ public class YxStoreOrderServiceImpl extends BaseServiceImpl<StoreOrderMapper, Y
         priceGroupDTO.setCostPrice(costPrice);
         priceGroupDTO.setVipPrice(vipPrice);
         priceGroupDTO.setPayIntegral(payIntegral);
+        priceGroupDTO.setDistribution(distribution);
         return priceGroupDTO;
+    }
+
+    /**
+     * 根据美团跑腿配送算法返回同城配送费用
+     * @param cartInfo      购物车
+     * @param userAddress   地址
+     * @return
+     */
+    private BigDecimal handleDistributionToPrice(List<YxStoreCartQueryVo> cartInfo, YxUserAddress userAddress){
+        //基础配送费6.5元
+        BigDecimal distribution = BigDecimal.valueOf(DistributionEnum.BASIC_DISTRIBUTION.getValue());
+        if (ObjectUtil.isNotNull(userAddress)) {
+            //获取地址
+            String address = userAddress.getProvince() + userAddress.getCity() + userAddress.getDistrict() + userAddress.getDetail();
+            //根据地址获得用户位置经纬度
+            GetTencentLocationVO locationVO = LocationUtils.geocoder(address);
+
+            //根据经纬度计算用户和商家的距离
+
+            double userLatitude = locationVO.getResult().getLocation().getLat();
+            double userlongitude = locationVO.getResult().getLocation().getLng();
+            if(ObjectUtil.isNotEmpty(userLatitude) && ObjectUtil.isNotEmpty(userlongitude)){
+                double distance = LocationUtils.getDistance(userLatitude,userlongitude, ShopLocationEnum.SHOP_LATITUDE.getValue(), ShopLocationEnum.SHOP_LONGITUDE.getValue());
+
+                System.out.println("distance: " + distance);
+                //根据距离计算同城配送费用
+                if (distance > DistributionDistanceEnum.DISTRIBUTION_DISTANCE_4.getValue()) { //配送范围10公里
+                    return distribution;    //TODO: 超出范围的返回值未确定
+                } else if (distance == DistributionDistanceEnum.DISTRIBUTION_DISTANCE_0.getValue()){
+                    //计算的距离为0时，配送费用为7.5元
+                    distribution = distribution.add(BigDecimal.valueOf(1));
+                } else if (distance > DistributionDistanceEnum.DISTRIBUTION_DISTANCE_0.getValue() && distance <= DistributionDistanceEnum.DISTRIBUTION_DISTANCE_1.getValue()) {
+                    //0-3公里，0元起，每公里加一元
+                    distribution = distribution.add(BigDecimal.valueOf(Math.ceil(distance / 1000)));
+                } else if (distance > DistributionDistanceEnum.DISTRIBUTION_DISTANCE_1.getValue() && distance < DistributionDistanceEnum.DISTRIBUTION_DISTANCE_2.getValue()) {
+                    //3-4公里，4元
+                    distribution = distribution.add(BigDecimal.valueOf(4));
+                } else if (distance >= DistributionDistanceEnum.DISTRIBUTION_DISTANCE_2.getValue() && distance < DistributionDistanceEnum.DISTRIBUTION_DISTANCE_3.getValue()) {
+                    ////4-5公里 6元
+                    distribution = distribution.add(BigDecimal.valueOf(6));
+                }else {
+                    //5-21公里，7元起，每公里加2元
+                    distribution = BigDecimal.valueOf(DistributionEnum.BASIC_DISTRIBUTION.getValue());
+                    distribution = distribution.add(BigDecimal.valueOf(Math.ceil(distance / 1000)));
+                }
+            }
+        }
+        return distribution;
     }
 
 

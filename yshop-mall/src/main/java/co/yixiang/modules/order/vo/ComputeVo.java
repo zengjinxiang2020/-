@@ -2,6 +2,7 @@ package co.yixiang.modules.order.vo;
 
 import co.yixiang.serializer.BigDecimalSerializer;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -40,4 +41,7 @@ public class ComputeVo implements Serializable {
 
     @JsonSerialize(using = BigDecimalSerializer.class)
     private BigDecimal payIntegral;
+
+    @JsonSerialize(using = BigDecimalSerializer.class)
+    private BigDecimal distribution;
 }

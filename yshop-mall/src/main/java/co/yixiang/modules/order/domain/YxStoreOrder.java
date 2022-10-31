@@ -90,6 +90,9 @@ public class YxStoreOrder extends BaseDomain {
     /** 支付邮费 */
     private BigDecimal payPostage;
 
+    /** 同城配送费用 */
+    private BigDecimal distribution;
+
 
     /** 抵扣金额 */
     private BigDecimal deductionPrice;

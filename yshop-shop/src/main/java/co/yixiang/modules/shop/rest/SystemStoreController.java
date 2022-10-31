@@ -91,7 +91,7 @@ public class SystemStoreController {
     public ResponseEntity<GetTencentLocationVO> create(@Validated @RequestBody String jsonStr) {
         JSONObject jsonObject = JSON.parseObject(jsonStr);
         String addr = jsonObject.getString("addr");
-        GetTencentLocationVO locationVO = LocationUtils.getLocation(addr);
+        GetTencentLocationVO locationVO = LocationUtils.geocoder(addr);
         if(locationVO.getStatus()!=0){
             throw new BadRequestException(locationVO.getMessage());
         }

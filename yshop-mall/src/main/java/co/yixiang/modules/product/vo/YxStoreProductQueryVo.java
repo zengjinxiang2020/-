@@ -95,6 +95,10 @@ public class YxStoreProductQueryVo implements Serializable {
     @JsonSerialize(using = BigDecimalSerializer.class)
     private BigDecimal postage;
 
+    @ApiModelProperty(value = "同城配送费用")
+    @JsonSerialize(using = BigDecimalSerializer.class)
+    private BigDecimal distribution;
+
     @ApiModelProperty(value = "单位名")
     private String unitName;
 

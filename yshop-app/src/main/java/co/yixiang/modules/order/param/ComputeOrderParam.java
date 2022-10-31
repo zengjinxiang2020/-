@@ -6,6 +6,8 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
+import java.math.BigDecimal;
+
 /**
  * @ClassName ComputeOrderParam
  * @Author Shuo Xing <610796224@qq.com>
@@ -30,7 +32,7 @@ public class ComputeOrderParam {
     private String useIntegral;
 
     @JsonProperty(value = "shipping_type")
-    @ApiModelProperty(value = "配送方式 1=快递 ，2=门店自提")
+    @ApiModelProperty(value = "配送方式 1=快递 ，2=门店自提  3=同城配送")
     private String shippingType;
 
     @ApiModelProperty(value = "砍价ID")

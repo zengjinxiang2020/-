@@ -189,7 +189,7 @@ public class YxStoreOrderQueryVo implements Serializable {
     @ApiModelProperty(value = "门店id")
     private Integer storeId;
 
-    @ApiModelProperty(value = "配送方式 1=快递 ，2=门店自提")
+    @ApiModelProperty(value = "配送方式 1=快递 ，2=门店自提   3=同城配送")
     private Integer shippingType;
 
 

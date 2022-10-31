@@ -31,4 +31,7 @@ public class PriceGroupDto {
 
     @JsonSerialize(using = BigDecimalSerializer.class)
     private BigDecimal payIntegral;
+
+    @JsonSerialize(using = BigDecimalSerializer.class)
+    private BigDecimal distribution;
 }
