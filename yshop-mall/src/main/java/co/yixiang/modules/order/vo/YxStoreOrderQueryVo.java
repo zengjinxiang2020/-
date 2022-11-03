@@ -77,6 +77,9 @@ public class YxStoreOrderQueryVo implements Serializable {
     @ApiModelProperty(value = "支付邮费")
     private BigDecimal payPostage;
 
+    @ApiModelProperty(value = "同城配送费用")
+    private BigDecimal distribution;
+
     @ApiModelProperty(value = "抵扣金额")
     private BigDecimal deductionPrice;
 

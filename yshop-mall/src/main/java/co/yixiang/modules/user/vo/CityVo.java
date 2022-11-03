@@ -21,11 +21,11 @@ public class CityVo implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    private Integer v; //id
+    private Integer v; //城市id
 
     private String n; //名称
 
-    private Integer pid;
+    private Integer pid;//父级id
 
     private List<CityVo> c; //子集
 
